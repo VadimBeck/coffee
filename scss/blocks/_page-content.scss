@@ -1,0 +1,36 @@
+.page-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.page-content__item {
+  @include flex(space-between, flex-start);
+  padding-bottom: rem(30px);
+  border-bottom: 1px solid $beige;
+  margin-bottom: rem(30px);
+}
+.page-content__img {
+  width: 25%;
+}
+.page-content__img-pic {
+  max-width: 100%;  
+}
+.page-content__text {
+  width: 70%;
+  & h2 {    
+    font-size: rem(18px);
+    margin-bottom: rem(10px);
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    color: $brown;
+    display: inline-block;
+    font-weight: $mediumFont;
+  }
+  & h2:hover {
+    border-color: #000;
+  }
+  & p {
+    font-size: rem(12px);
+    color: #333;
+  }
+}

@@ -1,0 +1,75 @@
+.goods {
+  @include flex(space-evenly, flex-end);
+  width: 100%;
+ }
+ .goods__item {
+   margin-right: rem(5px);
+   position: relative;   
+   &:last-child{
+     margin-right: 0;
+   }
+ }
+ .goods__link {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+ }
+ .goods__img {
+    @include laptop {
+      display: none;
+    }
+ }
+
+ .goods--footer .goods__link {    
+    font-size: rem(16px);
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    &:hover {
+      border-color: #fff;
+    }
+    @include desktop {
+      font-size: rem(15px);
+    }
+ }
+ .goods--scrolled {
+   width: 70%;
+   padding: 15px;
+   border-right: 1px dashed $lightBrown;
+   @include laptop {
+    border: none;
+    width: 90%;
+  }
+ }
+ .goods__drop {   
+   position: absolute;
+   font-family: Georgia, serif;
+   left: 0;
+   top: 100%;
+   min-width: rem(200px);
+   color: $midBrown;
+   border: 1px solid $beige;
+   border-radius: 4px;
+   padding: 8px 12px 0;
+   background: #fff;
+   font-style: italic;
+   display: none;
+   z-index: 2;
+ }
+ .goods__item:hover .goods__drop {
+  display: block;
+}
+ .goods__drop-item {
+   padding-bottom: rem(5px);
+   margin-bottom: rem(5px);
+   border-bottom: 1px dashed $beige;
+   &:hover {
+    border-bottom: 1px solid $beige;
+   }
+   &:last-child {
+    border: none;
+   }
+ }
+ .text {
+   display: flex;
+   flex-wrap: wrap;
+ }

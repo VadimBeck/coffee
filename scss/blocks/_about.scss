@@ -1,0 +1,27 @@
+.about__content {
+  display: flex;
+}
+.about__desc {
+  padding-right: rem(30px);
+}
+.about__desc p {
+  margin-bottom: rem(12px);
+  text-align: justify;
+}
+.about__desc ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.about__desc li {  
+  list-style-type: disc;
+}
+.about__img {
+  flex-shrink: 0;
+  width: 40%;
+}
+.about__img-pic {
+  max-width: 100%;
+}

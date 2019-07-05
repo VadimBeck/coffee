@@ -1,0 +1,38 @@
+.scrolled {
+  position: fixed;
+  background-color: $brown;
+  opacity: 0;
+  width: 100%;
+  color: #fff;
+  padding: 8px 0;
+  z-index: -1;
+  
+  &.is-active {
+    z-index: 4;
+    opacity: 1;
+    transition: opacity ease .6s;
+  }
+}
+.scrolled__container {
+  @include laptop {
+    flex-direction: row;
+  }
+}
+.scrolled__logo {
+  @include laptop {
+    display: none;
+  }
+}
+.scrolled__list {
+  @include flex(center, center);
+  flex: 1 1;
+  margin: 0 rem(8px);
+}
+.scrolled__item {
+  margin: 0 3px;
+}
+.scrolled__link {
+  font-size: 25px;
+  color: $lightBrown;
+  padding: 5px;
+}

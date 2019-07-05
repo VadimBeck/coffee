@@ -1,0 +1,28 @@
+.section-title {
+  margin-top: rem(20px);
+  margin-bottom: rem(50px);
+  text-align: center;
+}
+ 
+.section-title__text {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 177px;
+    height: 73px;
+    top: -15px;
+  }
+  &:before {
+    background:url(../img/main/h2-bg1.png)  center center / no-repeat;
+    left: -180px;
+  }
+  &:after {
+    background:url(../img/main/h2-bg2.png)  center center / no-repeat;
+    right: -180px;
+  }
+}
+  

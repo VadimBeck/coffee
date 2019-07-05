@@ -1,0 +1,11 @@
+.compare__link {
+  @include flex(center,center);
+}
+.compare__text {
+  border-bottom: 1px solid #000;
+  transition: .4s;
+  white-space: nowrap;
+  &:hover {
+    border-color: transparent;
+  }
+}

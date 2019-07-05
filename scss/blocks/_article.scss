@@ -1,0 +1,26 @@
+.article__img {
+  max-width: 100%;
+  margin: 0 auto rem(10px);
+}
+.article h4 {
+  font-size: rem(18px);  
+  text-align: center;
+}
+.article a {
+  color: #420101;
+  transition: all 0.3s linear;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-color: #420101;
+  }
+}
+.article time {
+  display: block;
+  margin-bottom: rem(10px);
+  text-align: start;
+}
+.article p {
+  color: #333;
+  text-align: justify;
+  font-size: rem(13px);
+}

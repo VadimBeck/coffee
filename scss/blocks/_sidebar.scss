@@ -1,0 +1,27 @@
+.sidebar {
+  width: 25%;
+  padding-left: rem(20px);
+  font-size: rem(13px);
+  margin-left: auto;
+}
+.sidebar__subtitle {
+  font-size: rem(22px);
+  text-align: center;
+  margin: rem(15px) 0;
+  position: relative;
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 17px;
+    top: 5px;
+  }
+  &::before {
+    left: 0;
+    background: url(../img/main/h2-bg1.png) center center / contain no-repeat;
+  }
+  &::after {
+    right: 0;
+    background: url(../img/main/h2-bg2.png) center center / contain no-repeat;
+  }
+}

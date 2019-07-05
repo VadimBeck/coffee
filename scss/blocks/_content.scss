@@ -1,0 +1,44 @@
+.content {
+  @include flex (flex-start, center);
+  flex-direction: column;
+  padding: rem(50px) 0;
+  width: 100%;
+}
+.content__wrap {
+  display: flex;
+}
+.content__lines {
+  width: 95%;
+  height: 6px;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: rem(50px);
+}
+.content__block {
+  width: 100%;
+}
+.content__block-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content__block-elem {
+  width: 25%;
+  padding: 0 rem(15px);
+  margin-bottom: rem(30px);
+  text-align: center;
+  @include laptop {
+    width: 50%;
+  }
+}
+.content__block-desc {
+  width: 45%;
+  @include flex(center, center);
+  flex-direction: column;
+  text-align: center;
+  padding: 0 rem(15px);
+  & p {
+    padding: rem(10px);    
+  }
+}

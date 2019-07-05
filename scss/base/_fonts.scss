@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-weight: $lightFont;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('../fonts/HelveticaNeueCyr-LightItalic.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-LightItalic.woff') format('woff');
+  font-weight: $lightFont;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff');
+  font-weight: $regularFont;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('../fonts/HelveticaNeueCyr-Italic.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-Italic.woff') format('woff');
+  font-weight: $regularFont;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+  font-weight: $mediumFont;
+  font-style: normal;
+}

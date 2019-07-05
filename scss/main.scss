@@ -1,0 +1,35 @@
+@import '../libs/normalize.css';
+@import './base/variables.scss';
+@import './base/fonts.scss';
+@import './base/mixins.scss';
+@import './base/setup.scss';
+
+@import './blocks/scrolled.scss';
+@import './blocks/menu.scss';
+@import './blocks/login.scss';
+@import './blocks/header.scss';
+@import './blocks/city.scss';
+@import './blocks/search.scss';
+@import './blocks/phones.scss';
+@import './blocks/goods.scss';
+@import './blocks/cart.scss';
+@import './blocks/compare.scss';
+@import './blocks/maincontent.scss';
+@import './blocks/slider.scss';
+@import './blocks/content.scss';
+@import './blocks/section-title.scss';
+@import './blocks/breadcrumbs.scss';
+@import './blocks/about.scss';
+@import './blocks/page-title.scss';
+@import './blocks/delivery.scss';
+@import './blocks/sidebar.scss';
+@import './blocks/navigation.scss';
+@import './blocks/pagination.scss';
+@import './blocks/page-content.scss';
+@import './blocks/article.scss';
+@import './blocks/logo.scss';
+
+
+@import './blocks/company-contacts.scss';
+@import './blocks/socials.scss';
+@import './blocks/footer.scss';

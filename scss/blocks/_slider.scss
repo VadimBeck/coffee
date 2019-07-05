@@ -1,0 +1,47 @@
+.slider {
+  position: relative;
+  @include laptop {
+    display: none;
+  }
+}
+.slider__desc {
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: rem(100px);
+  z-index: 1;
+}
+.slider__desc-title {
+  display: inline-block;
+  font-size: rem(30px);
+  line-height: rem(60px);
+  background-color: #fff;
+  width: 95%;
+  max-width: 1140px;
+  @include desktop {
+    font-size: rem(26px);
+  }
+}
+.owl-dots {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  display: flex;
+  justify-content: center;
+}
+.owl-dot {
+  margin-right: 10px;
+  outline: none;  
+}
+.owl-dot span{
+  display: block;
+  width: 125px;
+  height: 6px;
+  background: #fff;
+  cursor: default;
+}
+.owl-dot.active span {
+  background-color: $red;
+}

@@ -1,0 +1,12 @@
+.company-contacts {
+  @include flex(center, flex-end);
+  flex-direction: column;
+}
+.company-contacts__mail {
+  border-bottom: 1px solid #fff;
+  transition: .4s;
+  &:hover {
+    border-color: transparent;
+    text-decoration: underline;
+  }
+}

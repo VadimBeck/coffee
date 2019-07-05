@@ -1,0 +1,22 @@
+.footer {
+  margin-top: auto;
+  background-color: $brown;
+  color: #fff;
+  padding-top: rem(10px);
+  padding-bottom: rem(20px);
+}
+.footer__content {
+  @include flex (space-between, flex-end);
+  flex-direction: column;
+}
+.footer__container {
+  align-items: stretch;
+}
+.footer__nav-link {
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: .3s;
+  &:hover {
+    border-color: #fff;
+  }
+}

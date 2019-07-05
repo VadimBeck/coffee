@@ -1,0 +1,70 @@
+.navigation {
+  background-color: $lightBeige;
+  padding: rem(10px);  
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-bottom: rem(30px);
+}
+.navigation__item {
+  border-bottom: 1px dashed $midBrown;
+  padding-left: 40px;  
+}
+.navigation__link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    display: block;
+    width: 35px;
+    height: 35px;   
+  }
+}
+.navigation__name {
+  padding: rem(10px) 0;
+}
+.navigation__btn {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    font-size: 0;
+    margin-left: 2px;
+    top: -7px;
+    border: 6px solid transparent;
+    border-top-color: $brown;
+    border-width: 6px 5px 0px;
+  }
+}
+.navigation__inner {
+  color: $midBrown;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+.navigation__inner-link {
+  &:before {
+    content: "-";
+    padding: 5px;
+  }
+}
+
+.navigation__link--coffee::before {  
+  background: url(../img/header/coffee-icon.png)  0 center / contain no-repeat;  
+}
+.navigation__link--tea::before {
+  background: url(../img/header/tea-icon.png)  0 center / contain no-repeat;
+}
+.navigation__link--dishes::before {
+  background: url(../img/header/dishes.png)  0 center / contain no-repeat;
+}
+.navigation__link--sweet::before {
+  background: url(../img/header/sweet-icon.png)  0 center / contain no-repeat;
+}
+.navigation__link--sugar::before {
+  background: url(../img/header/sugar-icon.png)  0 center / contain no-repeat;
+}
+.navigation__link--machine::before {
+  background: url(../img/header/coffeemachine-icon.png)  0 center / contain no-repeat;
+}

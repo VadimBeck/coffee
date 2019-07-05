@@ -1,0 +1,29 @@
+.breadcrumbs {
+  align-self: flex-start;
+  margin-bottom: rem(10px);
+  font-size: rem(12px);
+  //padding-left: rem(10px);
+}
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__item {   
+  &::after {
+    content: "/";
+    margin: 0 5px;
+  }
+  &:last-child::after {
+    display: none;
+  }
+}
+.breadcrumbs__link {
+  border-bottom: 1px solid #000;
+  transition: .4s;
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  border-color: transparent;
+}

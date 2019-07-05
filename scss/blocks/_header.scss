@@ -1,0 +1,44 @@
+.header{  
+  background: #fff;
+  z-index: 2;
+  padding: rem(10px) 0 rem(10px);
+  border-bottom: 1px solid #000;
+  &.header--main {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50px;
+    padding: rem(10px) 0 rem(100px);
+    border: none;
+    background: linear-gradient(to bottom, white 67%, rgba(255, 255, 255, 0) 100%);
+    @include laptop {
+      position: static;
+      padding: rem(10px) 0 rem(10px);
+    }
+  }
+}
+.header__wrap {
+  @include laptop {
+    width: 100%;
+    margin-bottom: rem(10px);
+  }
+}
+.header__content {
+  width: 85%;
+}
+.header__content-row {
+  @include flex(center, center);
+  padding: rem(12px) 0;
+  @include laptop {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+.header__content-col {
+  margin-right: rem(20px);
+}
+.header__icon {
+  font-size: 33px;
+  color: $red;
+  margin-right: 10px;
+}

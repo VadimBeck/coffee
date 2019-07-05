@@ -1,0 +1,14 @@
+.search__inner {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.search__input {
+  border: none;
+  padding: 0;
+  outline: none;
+  width: 100%;
+}
