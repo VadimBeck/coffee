@@ -1,5 +1,8 @@
 .compare__link {
-  @include flex(center,center);
+  //@include flex(center,center);
+  display: inline-flex;
+  //justify-content: center;
+  align-items: center;
 }
 .compare__text {
   border-bottom: 1px solid #000;

@@ -1,0 +1,59 @@
+.filter {
+  color: $brown;
+  font-size: 12px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin-bottom: rem(15px);
+  width: 100%; 
+}
+.filter__row {
+  display: flex;
+  padding-top: 10px;
+  @include laptop {
+    flex-wrap: wrap;
+  }
+}
+.filter__col {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include laptop {
+    width: 30%;
+  }
+}
+.filter__col-name {
+  margin-bottom: rem(10px);  
+}
+.filter__price {
+  padding-top: 10px;
+}
+.filter__btn {
+  background: $red;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-style: italic;
+}
+.filter__choice {
+  color: #000;
+  font-style: normal;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+.filter__link {
+  font-style: normal;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 5px;
+  color: #337ab7;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+
+

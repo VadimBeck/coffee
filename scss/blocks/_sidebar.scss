@@ -1,8 +1,15 @@
 .sidebar {
-  width: 25%;
-  padding-left: rem(20px);
-  font-size: rem(13px);
+  width: 26%;
+  padding-left: rem(20px);  
   margin-left: auto;
+  @include desktop {
+    font-size: rem(12px);
+  }
+  @include laptop {
+    width: 100%;
+    margin: 0;
+    padding-bottom: rem(15px);
+  }
 }
 .sidebar__subtitle {
   font-size: rem(22px);

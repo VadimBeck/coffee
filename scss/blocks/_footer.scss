@@ -10,7 +10,16 @@
   flex-direction: column;
 }
 .footer__container {
-  align-items: stretch;
+  align-items: center;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  padding: rem(15px) 0;
+  @include laptop {
+    align-items: center;
+    text-align: center;
+  }
 }
 .footer__nav-link {
   text-transform: uppercase;
@@ -19,4 +28,26 @@
   &:hover {
     border-color: #fff;
   }
+}
+.footer__goods {
+  font-size: rem(16px);
+  @include desktop {
+    font-size: rem(15px);
+  }
+  @include tablets{
+    flex-wrap: wrap;
+  }
+  @include tablets {
+    flex-direction: column;
+    width: auto;
+    font-size: rem(16px);
+  }
+}
+.footer__goods .goods__link {  
+  border-bottom: 1px solid transparent;
+  transition: .3s;
+  margin-right: 5px;
+  &:hover {
+    border-color: #fff;
+  } 
 }

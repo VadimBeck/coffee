@@ -20,10 +20,11 @@ body {
   width: 95%;
   max-width: 1140px;
   margin: 0 auto;
-  @include flex (space-between, center);
+  @include flex (space-between, flex-start);
   @include laptop {
     flex-direction: column;
     align-items: center;
+    max-width: 960px;
   }
 }
 ul {

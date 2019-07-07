@@ -4,33 +4,84 @@
   opacity: 0;
   width: 100%;
   color: #fff;
-  padding: 8px 0;
   z-index: -1;
   
-  &.is-active {
+  @include tablets {
     z-index: 4;
     opacity: 1;
-    transition: opacity ease .6s;
+    position: static;
+  }
+  &.is-active {
+    position: fixed;
+    z-index: 4;
+    opacity: 1;
+    transition: opacity ease .6s;    
   }
 }
+.scrolled__goods {
+  width: 70%;  
+  border-right: 1px dashed $lightBrown;
+  overflow: hidden;
+  transition: all .6s;
+
+  @include laptop {
+    border: none;
+    width: 90%;
+    font-size: rem(12px);
+  }
+
+  @include tablets {
+    flex-direction: column;
+    width: 100%;    
+    max-height: 0;
+  }
+
+  & .goods__link {
+    text-align: start;
+    padding: 15px 0;
+  }
+  & .goods__item:first-child {
+    @include tablets {
+      border-top: 1px solid $lightBrown;
+    }
+  } 
+
+  & .goods__item:hover .goods__drop {
+    display: none;
+  }  
+}
+
 .scrolled__container {
+  align-items: center;
   @include laptop {
     flex-direction: row;
   }
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
+
 .scrolled__logo {
   @include laptop {
     display: none;
   }
 }
+
 .scrolled__list {
   @include flex(center, center);
   flex: 1 1;
   margin: 0 rem(8px);
+
+  @include tablets {
+    display: none;
+  }
 }
+
 .scrolled__item {
   margin: 0 3px;
 }
+
 .scrolled__link {
   font-size: 25px;
   color: $lightBrown;

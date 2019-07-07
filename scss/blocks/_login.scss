@@ -2,7 +2,7 @@
   color: $lightBrown;
   font-size: rem(14px);
   display: flex;
-  //flex: 1 1;
+  padding: 10px 0;
   margin: 0 rem(5px);
   &.login--scrolled {
     @include desktop {
@@ -13,7 +13,7 @@
 .login__link {
   &:after {
   content: "/";
-  margin-left: 5px;
+  margin: 0 5px;
   }
   &:last-child::after{
     display: none;

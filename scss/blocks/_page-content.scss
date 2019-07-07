@@ -1,22 +1,41 @@
 .page-content {
-  width: 75%;
+  width: 73%;
   display: flex;
   flex-direction: column;
+  @include laptop {
+    width: 100%;
+  }
 }
 .page-content__item {
   @include flex(space-between, flex-start);
   padding-bottom: rem(30px);
   border-bottom: 1px solid $beige;
   margin-bottom: rem(30px);
+  @include phones {
+    flex-direction: column;
+  }
 }
 .page-content__img {
   width: 25%;
+  margin-right: 15px;
+  @include phones {
+    width: 100%;
+  }
+  &.page-content__img--product {
+    width: 35%;
+    @include phones {
+      width: 100%;
+    }
+  }
 }
 .page-content__img-pic {
   max-width: 100%;  
 }
 .page-content__text {
   width: 70%;
+  @include phones {
+    width: 100%;
+  }
   & h2 {    
     font-size: rem(18px);
     margin-bottom: rem(10px);
@@ -25,12 +44,27 @@
     color: $brown;
     display: inline-block;
     font-weight: $mediumFont;
-  }
+  }  
   & h2:hover {
     border-color: #000;
   }
   & p {
     font-size: rem(12px);
     color: #333;
+  }
+}
+.page-content__info {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: $brown;
+}
+.page-content__info-link {
+  margin: 0 20px;
+  border-bottom: 1px solid $brown;
+  padding: 5px 0;
+  transition: .4s;
+  &:hover {
+    border-color: transparent;
   }
 }

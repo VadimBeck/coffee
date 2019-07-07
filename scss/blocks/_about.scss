@@ -3,6 +3,9 @@
 }
 .about__desc {
   padding-right: rem(30px);
+  @include laptop {
+    padding: 0;
+  }
 }
 .about__desc p {
   margin-bottom: rem(12px);
@@ -21,6 +24,9 @@
 .about__img {
   flex-shrink: 0;
   width: 40%;
+  @include laptop {
+    width: 80%;
+  }
 }
 .about__img-pic {
   max-width: 100%;

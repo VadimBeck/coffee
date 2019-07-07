@@ -21,6 +21,8 @@
   @include laptop {
     width: 100%;
     margin-bottom: rem(10px);
+    text-align: center;
+    margin-right: 0;
   }
 }
 .header__content {
@@ -31,11 +33,19 @@
   padding: rem(12px) 0;
   @include laptop {
     flex-wrap: wrap;
-    text-align: center;
+    
+  }
+  &:last-child {
+    @include tablets {
+      display: none;
+    }
   }
 }
 .header__content-col {
   margin-right: rem(20px);
+  @include phones {
+    width: 100%;
+  }
 }
 .header__icon {
   font-size: 33px;

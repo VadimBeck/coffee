@@ -1,16 +1,18 @@
 .goods {
   @include flex(space-evenly, flex-end);
   width: 100%;
+  @include tablets {
+    align-items: stretch;
+  }
  }
  .goods__item {
-   margin-right: rem(5px);
-   position: relative;   
+   position: relative;
    &:last-child{
      margin-right: 0;
    }
  }
  .goods__link {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   text-align: center;
  }
@@ -19,27 +21,14 @@
       display: none;
     }
  }
-
- .goods--footer .goods__link {    
-    font-size: rem(16px);
-    border-bottom: 1px solid transparent;
-    transition: .3s;
-    &:hover {
-      border-color: #fff;
-    }
-    @include desktop {
-      font-size: rem(15px);
-    }
- }
- .goods--scrolled {
-   width: 70%;
-   padding: 15px;
-   border-right: 1px dashed $lightBrown;
+ .goods__text {
+   display: inline-block;
+   max-width: rem(100px);
    @include laptop {
-    border: none;
-    width: 90%;
-  }
- }
+     max-width: none;
+   }
+ } 
+ 
  .goods__drop {   
    position: absolute;
    font-family: Georgia, serif;
@@ -68,8 +57,4 @@
    &:last-child {
     border: none;
    }
- }
- .text {
-   display: flex;
-   flex-wrap: wrap;
  }
