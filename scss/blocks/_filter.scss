@@ -4,13 +4,15 @@
   font-family: Georgia, serif;
   font-style: italic;
   margin-bottom: rem(15px);
-  width: 100%; 
+  width: 100%;
+  position: relative;
 }
 .filter__row {
   display: flex;
   padding-top: 10px;
   @include laptop {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .filter__col {
@@ -20,6 +22,13 @@
   justify-content: space-between;
   @include laptop {
     width: 30%;
+  }
+  &:last-child {
+    @include phones {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
 .filter__col-name {

@@ -360,15 +360,43 @@
               <a class="breadcrumbs__link">Личный кабинет пользователя</a>
             </li>
           </ul>
-        </div>
-       
+        </div>     
         
-        <div class="container">          
-          <section class="personal">
-            <h1 class="page-title">Регистрация нового пользователя</h1>           
-              
-          </section>         
-        </div>
+               
+        <section class="personal">
+          <h1 class="page-title">Регистрация нового пользователя</h1>
+          <span class="personal-text"><strong>Регистрация</strong></span>
+          <div class="registration">
+            <form class="registration__form" action="#">
+              <div class="registration__row">
+                <div class="registration__text">Логин (мин. 3 символа):*</div>
+                <input type="text" class="registration__input">
+              </div>
+              <div class="registration__row">
+                <div class="registration__text">Пароль:*</div>
+                <input type="text" class="registration__input">
+              </div>
+              <div class="registration__row">
+                <div class="registration__text">Подтверждение пароля:*</div>
+                <input type="text" class="registration__input">
+              </div>
+              <div class="registration__row">
+                <div class="registration__text">Адрес e-mail:*</div>
+                <input type="text" class="registration__input">
+              </div>
+              <div class="registration__row">
+                <div class="registration__text">ФИО:*</div>
+                <input type="text" class="registration__input">
+              </div>
+              <div class="registration__submit">
+                <buttton class="personal__btn">Регистрация</buttton>
+              </div>
+            </form>
+          </div>
+          <span class="personal-text">Пароль должен быть не менее 6 символов длиной.</span>
+          <span class="personal-text">*Поля, обязательные для заполнения.</span>
+            
+        </section>  
        
       </main>
     </div>

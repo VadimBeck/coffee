@@ -32,8 +32,7 @@
   @include flex(center, center);
   padding: rem(12px) 0;
   @include laptop {
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
   }
   &:last-child {
     @include tablets {
@@ -45,6 +44,7 @@
   margin-right: rem(20px);
   @include phones {
     width: 100%;
+    align-self: center;
   }
 }
 .header__icon {

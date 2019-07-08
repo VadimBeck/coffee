@@ -76,3 +76,8 @@
 .catalog__count-btn--small {
   font-size: rem(16px);
 }
+
+// костыль для JQuery UI
+.catalog__wrapper {
+  display: block;
+}

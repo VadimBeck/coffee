@@ -6,23 +6,32 @@
  
 .section-title__text {
   position: relative;
-  display: inline-block;
+  //display: inline-block;
   font-size: 30px;
   text-transform: uppercase;
   &:before, &:after {
     content: "";
     position: absolute;
-    width: 177px;
+    width: 20%;
     height: 73px;
     top: -15px;
+    @include phones {
+      display: none;
+    }
   }
   &:before {
-    background:url(../img/main/h2-bg1.png)  center center / no-repeat;
-    left: -180px;
+    background:url(../img/main/h2-bg1.png)  center center / contain no-repeat;    
+    left: 15%;
+    @include tablets {
+      left: 5%;
+    }
   }
   &:after {
-    background:url(../img/main/h2-bg2.png)  center center / no-repeat;
-    right: -180px;
+    background:url(../img/main/h2-bg2.png)  center center / contain no-repeat;    
+    right: 15%;
+    @include tablets {
+      right: 5%;
+    }
   }
 }
   

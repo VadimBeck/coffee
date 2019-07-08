@@ -22,7 +22,7 @@
   &:hover::after {
     border-top-color: #000;
     transition: .4s;
-  }
+  }  
 }
 .city__drop {
   position: absolute;
@@ -46,4 +46,8 @@
   &:hover {
     background-color: #08C;
   }
+}
+
+.city:hover .city__drop {
+  display: block;
 }

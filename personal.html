@@ -364,7 +364,39 @@
               
         <section class="personal">            
           <h1 class="page-title">Авторизация</h1>
-          
+          <span class="personal-text">Пожалуйста, авторизуйтесь:</span>
+          <form name="auth__form" action="#">
+            <table class="auth__table">
+              <tr>
+                <td class="auth__table-label">Логин:</td>
+                <td class="auth__table-row"><input class="auth__table-input" type="text" name="USER_LOGIN" maxlength="255" value="" /></td>
+              </tr>
+              <tr>
+                <td class="auth__table-row auth__table-label">Пароль:</td>
+                <td class="auth__table-row"><input class="auth__table-input" type="password" name="USER_PASSWORD" maxlength="255" autocomplete="off" />
+                </td>
+              </tr>
+                    <tr>
+                <td></td>
+                <td class="auth__table-row"><input class="auth__table-text" type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y" /><label for="USER_REMEMBER">&nbsp;Запомнить меня на этом компьютере</label></td>
+              </tr>
+              <tr>
+                <td class="auth__table-row"></td>
+                <td class="auth__table-row"><input class="personal__btn" type="submit" name="Login" value="Войти" /></td>
+              </tr>
+            </table>        
+            <noindex>
+              <span>
+                <a class="personal__link" href="#" rel="nofollow">Забыли свой пароль?</a>
+              </span>
+            </noindex>        
+            <noindex>
+              <span>
+                <a class="personal__link" href="#" rel="nofollow">Зарегистрироваться</a>
+                Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.
+              </span>
+            </noindex>        
+          </form>
         </section> 
       </main>
     </div>
