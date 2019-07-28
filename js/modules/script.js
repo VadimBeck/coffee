@@ -21,7 +21,6 @@ $(function () {
         $('.scrolled').removeClass("is-active");
     }
   });
-
   
   let menuBtn = document.querySelector(".toggle-menu");
   let topMenu = document.querySelector(".menu__list");
@@ -44,14 +43,40 @@ $(function () {
       menu.style.maxHeight = "none";      
       }
     }
-
-    $(".select").selectmenu();    
-
+    $("#city").selectmenu();
+  
     $(".ui-slider").slider({
-      min: 639,
-      max: 1188,
-      values: [639,1188],
-      range: true
+      min: 0,
+      max: 9999,
+      values: [0,9999],
+      range: true,
+      stop: function(event, ui) {
+        $(".filter__price-min").val($(".ui-slider").slider("values",0));
+        $(".filter__price-max").val($(".ui-slider").slider("values",1));
+      },
+      slide: function(event, ui){
+          $(".filter__price-min").val($(".ui-slider").slider("values",0));
+          $(".filter__price-max").val($(".ui-slider").slider("values",1));
+      }
     })
+        
+    const selects = document.querySelectorAll('.select');
+    for (let i=0; i <= selects.length; i++) {
+      $(`#select${i}`).ddslick({
+        width: "auto",
+        background: 'none'
+      })
+    };
 
+    $(".catalog__plus").click(function(){
+      let input = $(this).siblings(".catalog__count-num");
+      input.val(+input.val()+1);
+    })
+    $(".catalog__minus").click(function(){
+      let input = $(this).siblings(".catalog__count-num");
+      if(input.val()>1){
+        input.val(input.val()-1);
+      }
+    })
+    
 });

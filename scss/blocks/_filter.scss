@@ -10,6 +10,7 @@
 .filter__row {
   display: flex;
   padding-top: 10px;
+  flex-wrap: wrap;
   @include laptop {
     flex-wrap: wrap;
     justify-content: center;
@@ -17,9 +18,10 @@
 }
 .filter__col {
   margin-right: 15px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  min-width: rem(100px);
   @include laptop {
     width: 30%;
   }
@@ -29,13 +31,23 @@
       width: 100%;
       justify-content: center;
     }
-  }
+  }  
 }
 .filter__col-name {
   margin-bottom: rem(10px);  
 }
 .filter__price {
   padding-top: 10px;
+  @include flex(flex-start, center);
+}
+.filter__price-val {
+  border: none;
+  outline: none;
+  color: $brown;
+  margin: 0 3px;
+}
+.filter__price-min {
+  margin-right: auto;
 }
 .filter__btn {
   background: $red;
@@ -61,8 +73,3 @@
     text-decoration: underline;
   }
 }
-
-
-
-
-

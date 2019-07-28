@@ -53,12 +53,11 @@
           <div class="header__content">
             <div class="header__content-row">
               <div class="header__content-col header__wrap">
-                <div class="city">
-                  <a href="#" class="city__link">Москва</a>
-                  <ul class="city__drop">
-                    <li class="city__drop-item">Москва</li>
-                  </ul>
-                </div>              
+                <div class="city__wrap">                  
+                  <select name="city" id="city">
+                    <option value="Москва" selected>Москва</option>
+                  </select>
+                </div>             
               </div>
               <div class="header__content-col header__wrap">
                 <form class="search" action="#">
@@ -557,27 +556,27 @@
               <ul class="socials__list">
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/fb.png" class="socials__img">
+                    <img src="./img/socials/fb.png" alt="facebook" class="socials__img">
                   </a>
                 </li>
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/vk.png" class="socials__img">
+                    <img src="./img/socials/vk.png" alt="vk" class="socials__img">
                   </a>
                 </li>
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/ok.png" class="socials__img">
-                  </a>                
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link">
-                    <img src="./img/socials/yt.png" class="socials__img">
+                    <img src="./img/socials/ok.png" alt="ok" class="socials__img">
                   </a>
                 </li>
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/instagrem.png" class="socials__img">
+                    <img src="./img/socials/yt.png" alt="youtube" class="socials__img">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="./img/socials/instagrem.png" alt="instagram" class="socials__img">
                   </a>
                 </li>
               </ul>
@@ -594,6 +593,7 @@
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
   <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./libs/ddslick/ddslick.js"></script>
   <script src="./js/script.min.js"></script>
 </body>
 

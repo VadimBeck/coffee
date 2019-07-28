@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="wrapper">    
+  <div class="wrapper">
     <nav class="menu">
       <div class="container">
         <ul class="menu__list">
@@ -40,7 +40,7 @@
         <div class="login">
           <a href="./personal.html" class="login__link">Войти</a>
           <a href="./registration.html" class="login__link">Зарегистрироваться</a>
-        </div>                
+        </div>
       </div>
     </nav>
     <header class="header">
@@ -53,12 +53,11 @@
         <div class="header__content">
           <div class="header__content-row">
             <div class="header__content-col header__wrap">
-              <div class="city">
-                <a href="#" class="city__link">Москва</a>
-                <ul class="city__drop">
-                  <li class="city__drop-item">Москва</li>
-                </ul>
-              </div>              
+              <div class="city__wrap">
+                <select name="city" id="city">
+                  <option value="Москва" selected>Москва</option>
+                </select>
+              </div>
             </div>
             <div class="header__content-col header__wrap">
               <form class="search" action="#">
@@ -68,7 +67,7 @@
                     <i class="fa fa-search"></i>
                   </button>
                 </div>
-             </form>
+              </form>
             </div>
             <div class="header__content-col">
               <div class="phones">
@@ -83,7 +82,7 @@
               <div class="compare">
                 <a href="#" class="compare__link">
                   <span class="header__icon"><i class="fa fa-balance-scale"></i></span>
-                  <span class="compare__text">В сравнении&nbsp;<span class="compare__count">0</span></span>                  
+                  <span class="compare__text">В сравнении&nbsp;<span class="compare__count">0</span></span>
                 </a>
               </div>
             </div>
@@ -92,24 +91,24 @@
                 <a href="#" class="cart__link">
                   <div class="cart__img">
                     <span class="header__icon"><i class="fa fa-shopping-bag"></i></span>
-                  </div>                
+                  </div>
                   <div class="cart__text">
                     <span class="cart__count-text">Товаров</span>
                     <span class="cart__count-num">0</span>
-                    <br>                         
+                    <br>
                     <span class="cart__sum-text">На сумму</span>
                     <span class="cart__sum-num">0 руб</span>
-                  </div>                
+                  </div>
                 </a>
               </div>
             </div>
           </div>
           <div class="header__content-row">
             <ul class="goods">
-              <li class="goods__item">                
+              <li class="goods__item">
                 <a href="./catalog.html" class="goods__link">
-                    <img src="./img/header/coffee-icon.png" alt="" class="goods__img">
-                    <span class="goods__text">Кофе</span>
+                  <img src="./img/header/coffee-icon.png" alt="" class="goods__img">
+                  <span class="goods__text">Кофе</span>
                 </a>
                 <div class="goods__drop">
                   <ul class="goods__drop-list">
@@ -140,7 +139,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="goods__item">                
+              <li class="goods__item">
                 <a href="./catalog.html" class="goods__link">
                   <img src="./img/header/tea-icon.png" alt="" class="goods__img">
                   <span class="goods__text">Чай</span>
@@ -184,24 +183,24 @@
                 </div>
               </li>
               <li class="goods__item">
-                <a href="./catalog.html" class="goods__link">                  
+                <a href="./catalog.html" class="goods__link">
                   <img src="./img/header/dishes.png" alt="" class="goods__img">
                   <span class="goods__text">Посуда</span>
                 </a>
               </li>
-              <li class="goods__item">                
+              <li class="goods__item">
                 <a href="./catalog.html" class="goods__link">
                   <img src="./img/header/sweet-icon.png" alt="" class="goods__img">
                   <span class="goods__text">Сладости</span>
                 </a>
               </li>
-              <li class="goods__item">                
+              <li class="goods__item">
                 <a href="./catalog.html" class="goods__link">
                   <img src="./img/header/sugar-icon.png" alt="" class="goods__img">
                   <span class="goods__text">Сахар</span>
                 </a>
               </li>
-              <li class="goods__item">                
+              <li class="goods__item">
                 <a href="./catalog.html" class="goods__link">
                   <img src="./img/header/coffeemachine-icon.png" alt="" class="goods__img">
                   <span class="goods__text">Кофемашины</span>
@@ -209,7 +208,7 @@
               </li>
               <li class="goods__item">
                 <a href="./catalog.html" class="goods__link">
-                  <span class="goods__text">Кофе в  шоколаде</span>
+                  <span class="goods__text">Кофе в шоколаде</span>
                 </a>
               </li>
               <li class="goods__item">
@@ -224,7 +223,7 @@
     </header>
     <div class="scrolled">
       <div class="container scrolled__container">
-          <button class="catalog">Каталог</button>        
+        <button class="catalog">Каталог</button>
         <div class="logo scrolled__logo">
           <a href="./index.html" class="logo__link">
             <img src="./img/scrolled/logo-gold-mini.png" alt="Компания Bonka" class="logo__pic">
@@ -346,7 +345,7 @@
         <div class="login login--scrolled">
           <a href="#" class="login__link">Войти</a>
           <a href="#" class="login__link">Зарегистрироваться</a>
-        </div>       
+        </div>
       </div>
     </div>
     <div class="container">
@@ -357,34 +356,38 @@
               <a href="./index.html" class="breadcrumbs__link">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link">Каталог</a>
+              <a href="#" class="breadcrumbs__link">Каталог</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link">Кофе</a>
+              <a href="#" class="breadcrumbs__link">Кофе</a>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item--active">
-                <a class="breadcrumbs__link">Кофе в капсулах</a>
-              </li>
+              <a class="breadcrumbs__link">Кофе в капсулах</a>
+            </li>
           </ul>
         </div>
-       
-        
-        <div class="container">          
-          <div class="page-content">            
+        <div class="container">
+          <div class="page-content">
             <div class="page-content__item">
               <div class="page-content__img page-content__img--product">
                 <a href="./product.html"><img src="./img/catalog/catalog_4.png" alt class="page-content__img-pic"></a>
               </div>
               <div class="page-content__text catalog__content">
-                <a href="./product.html"><h2>АЛЬМА ДИ КАФЕ (капсулы)</h2></a>
+                <a href="./product.html">
+                  <h2>АЛЬМА ДИ КАФЕ (капсулы)</h2>
+                </a>
                 <div class="catalog__link-wrap"><a href="./catalog.html" class="catalog__link">Кофе в капсулах</a></div>
-                <p>В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает робуста. 
-                    Крепкий напиток с мягким вкусом.</p>
-              </div>              
+                <p>В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  робуста.
+                  Крепкий напиток с мягким вкусом.</p>
+              </div>
               <div class="catalog__count">
                 <div class="catalog__count-row">
-                  <span class="catalog__count-num">1</span>
-                  <span class="header__icon"><i class="fa fa-balance-scale"></i></span>
+                  <button class="catalog__control catalog__minus">-</button>
+                  <input value="1" class="catalog__count-num">
+                  <button class="catalog__control catalog__plus">+</button>
+                  <a href="#" class="catalog__control-link"><span class="header__icon"><i
+                        class="fa fa-balance-scale"></i></span></a>
                 </div>
                 <button class="catalog__count-btn">Купить</button>
                 <button class="catalog__count-btn catalog__count-btn--small">Купить в 1 клик</button>
@@ -393,14 +396,14 @@
             <div class="page-content__info">
               <a href="#" class="page-content__info-link">Рецепты кофе</a>
               <a href="#" class="page-content__info-link"> Отзывы (0)</a>
-            </div> 
+            </div>
           </div>
           <aside class="sidebar">
             <ul class="navigation">
               <li class="navigation__item">
                 <div class="navigation__row">
-                  <a href="#" class="navigation__link navigation__link--coffee">                   
-                    <span class="navigation__name">Кофе</span>         
+                  <a href="#" class="navigation__link navigation__link--coffee">
+                    <span class="navigation__name">Кофе</span>
                   </a>
                   <button class="navigation__btn"></button>
                 </div>
@@ -412,8 +415,8 @@
               </li>
               <li class="navigation__item">
                 <div class="navigation__row">
-                  <a href="#" class="navigation__link navigation__link--tea">                    
-                    <span class="navigation__name">Чай</span>         
+                  <a href="#" class="navigation__link navigation__link--tea">
+                    <span class="navigation__name">Чай</span>
                   </a>
                   <button class="navigation__btn"></button>
                 </div>
@@ -455,62 +458,64 @@
               </li>
               <li class="navigation__item">
                 <div class="navigation__row">
-                  <a href="#" class="navigation__link navigation__link--dishes">                    
-                    <span class="navigation__name">Посуда</span>         
-                  </a>                  
-                </div>                
-              </li>
-              <li class="navigation__item">
-                <div class="navigation__row">
-                  <a href="#" class="navigation__link navigation__link--sweet">                   
-                    <span class="navigation__name">Сладости</span>         
-                  </a>                  
-                </div>                
-              </li>
-              <li class="navigation__item">
-                <div class="navigation__row">
-                  <a href="#" class="navigation__link navigation__link--sugar">                    
-                    <span class="navigation__name">Сахар</span>         
-                  </a>                  
-                </div>                
-              </li>
-              <li class="navigation__item">
-                <div class="navigation__row">
-                  <a href="#" class="navigation__link navigation__link--machine">                    
-                    <span class="navigation__name">Кофемашины</span>         
-                  </a>                  
-                </div>                
-              </li>
-              <li class="navigation__item">
-                <div class="navigation__row">
-                  <a href="#" class="navigation__link">
-                    <span class="navigation__name">Кофе в шоколаде</span>         
-                  </a>                  
-                </div>                
-              </li>
-              <li class="navigation__item">
-                <div class="navigation__row">
-                  <a href="#" class="navigation__link">
-                    <span class="navigation__name">Прочее</span>         
+                  <a href="#" class="navigation__link navigation__link--dishes">
+                    <span class="navigation__name">Посуда</span>
                   </a>
-                </div>                
+                </div>
+              </li>
+              <li class="navigation__item">
+                <div class="navigation__row">
+                  <a href="#" class="navigation__link navigation__link--sweet">
+                    <span class="navigation__name">Сладости</span>
+                  </a>
+                </div>
+              </li>
+              <li class="navigation__item">
+                <div class="navigation__row">
+                  <a href="#" class="navigation__link navigation__link--sugar">
+                    <span class="navigation__name">Сахар</span>
+                  </a>
+                </div>
+              </li>
+              <li class="navigation__item">
+                <div class="navigation__row">
+                  <a href="#" class="navigation__link navigation__link--machine">
+                    <span class="navigation__name">Кофемашины</span>
+                  </a>
+                </div>
+              </li>
+              <li class="navigation__item">
+                <div class="navigation__row">
+                  <a href="#" class="navigation__link">
+                    <span class="navigation__name">Кофе в шоколаде</span>
+                  </a>
+                </div>
+              </li>
+              <li class="navigation__item">
+                <div class="navigation__row">
+                  <a href="#" class="navigation__link">
+                    <span class="navigation__name">Прочее</span>
+                  </a>
+                </div>
               </li>
             </ul>
-           <div class="sidebar__block">
+            <div class="sidebar__block">
               <h3 class="sidebar__subtitle">Новости</h3>
               <div class="article">
                 <img class="article__img" src="./img/news/news_01.png" alt="Открытие нового сайта">
                 <h4><a href="#">Начал работать фирменный интернет-магазин "Царского Подворья"!</a></h4>
                 <time datetime="2018-07-01">01.07.2018</time>
-                <p>В компанию "Царское Подворье" часто поступают звонки и письма с вопросом "где можно купить ваш кофе?".<br>
+                <p>В компанию "Царское Подворье" часто поступают звонки и письма с вопросом "где можно купить ваш
+                  кофе?".<br>
                   Нас радует подобное внимание, ведь это доказательство качества наших продуктов.<br>
                   Не смотря на широкую сеть дистрибьюторов по всей России, не все позиции нашего широкого ассортимента
                   легко купить.<br>
-                  Специально для настоящих и будущих поклонников "Царского подворья" мы запустили интернет-магазин. В нем
+                  Специально для настоящих и будущих поклонников "Царского подворья" мы запустили интернет-магазин. В
+                  нем
                   представлены все 278 видов кофе, которые мы производим. Так же в нем можно найти наш чай, мармелад,
                   драже и кофейную посуду.</p>
               </div>
-           </div>
+            </div>
           </aside>
         </div>
         <div class="recommend">
@@ -519,7 +524,7 @@
             <li class="recommend__item">
               <div class="recommend__img">
                 <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" class="recommend__img-pic">
+                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
                 </a>
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
@@ -531,7 +536,7 @@
             <li class="recommend__item">
               <div class="recommend__img">
                 <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" class="recommend__img-pic">
+                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
                 </a>
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
@@ -543,7 +548,7 @@
             <li class="recommend__item">
               <div class="recommend__img">
                 <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" class="recommend__img-pic">
+                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
                 </a>
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
@@ -555,7 +560,7 @@
             <li class="recommend__item">
               <div class="recommend__img">
                 <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" class="recommend__img-pic">
+                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
                 </a>
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
@@ -567,7 +572,7 @@
             <li class="recommend__item">
               <div class="recommend__img">
                 <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" class="recommend__img-pic">
+                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
                 </a>
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
@@ -576,7 +581,6 @@
               <button class="recommend__btn">Купить</button>
               <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
             </li>
-           
           </ul>
         </div>
       </main>
@@ -587,7 +591,7 @@
           <a href="#" class="logo__link">
             <img src="./img/footer/logo-gold.png" alt="Компания Bonka" class="logo__pic">
           </a>
-        </div>   
+        </div>
         <div class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -607,7 +611,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__content">          
+        <div class="footer__content">
           <ul class="goods footer__goods">
             <li class="goods__item">
               <a href="" class="goods__link">Кофе</a>
@@ -639,27 +643,27 @@
               <ul class="socials__list">
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/fb.png" class="socials__img">
+                    <img src="./img/socials/fb.png" alt="facebook" class="socials__img">
                   </a>
                 </li>
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/vk.png" class="socials__img">
+                    <img src="./img/socials/vk.png" alt="vk" class="socials__img">
                   </a>
                 </li>
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/ok.png" class="socials__img">
-                  </a>                
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link">
-                    <img src="./img/socials/yt.png" class="socials__img">
+                    <img src="./img/socials/ok.png" alt="ok" class="socials__img">
                   </a>
                 </li>
                 <li class="socials__item">
                   <a href="#" class="socials__link">
-                    <img src="./img/socials/instagrem.png" class="socials__img">
+                    <img src="./img/socials/yt.png" alt="youtube" class="socials__img">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="./img/socials/instagrem.png" alt="instagram" class="socials__img">
                   </a>
                 </li>
               </ul>
@@ -676,6 +680,7 @@
   <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
   <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./libs/ddslick/ddslick.js"></script>
   <script src="./js/script.min.js"></script>
 </body>
 

@@ -7,13 +7,13 @@
   z-index: -1;
   
   @include tablets {
-    z-index: 4;
+    z-index: 11;
     opacity: 1;
     position: static;
   }
   &.is-active {
     position: fixed;
-    z-index: 4;
+    z-index: 11;
     opacity: 1;
     top: 0;
     transition: opacity ease .6s;    

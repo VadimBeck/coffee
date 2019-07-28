@@ -25,39 +25,16 @@
 }
 .personal__btn {
   background: $brown;
-  padding: 10px 34px;
+  padding: 10px 30px;
   border: none;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
+  text-align: center;
 }
 .personal__link {
   padding: 5px;
   display: block;
   color: #337ab7;
-}
-
-
-.registration {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.registration__row {
-  display: flex;
-  justify-content: space-between;
-}
-.registration__input {
-  padding: 5px;
-  display: inline-block;
-  margin-left: 10px;
-  outline: none;
-  &:focus {
-    border-color: $midBrown;
-  }
-}
-.registration__submit {
-  width: 100%;
-  text-align: end;
 }

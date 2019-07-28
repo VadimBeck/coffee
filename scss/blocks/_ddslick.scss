@@ -1,0 +1,38 @@
+.dd-container {
+  & .dd-select{
+    border-radius: 5px;    
+  }
+  & .dd-option {
+    color: $brown;
+    border-bottom: 1px dashed #e0d5cf;
+    &:hover {
+      color: $brown;
+      background: none;
+      border-bottom: 1px solid #e0d5cf;
+    }
+  }
+  & .dd-option-selected {
+    background: none;
+  }
+  & .dd-options{
+    min-width: 100%;
+    border-color: #e0d5cf;
+  }
+  & .dd-selected {
+    padding: 5px 25px 5px 10px;
+    font-weight: normal;
+  }
+  & .dd-selected-image{
+    max-height: 1.5em;
+  }
+  & .dd-option-image{
+    max-height: 1.5em;
+  }
+  & .dd-pointer-down {    
+    border-top: solid 5px $midBrown;
+  }
+  & .dd-pointer-up {
+    border: solid 5px transparent;
+    border-bottom: solid 5px $midBrown;
+  }
+}

@@ -43,27 +43,20 @@
   text-align: center;
 }
 .catalog__count-num {
-  padding: 5px 8px;
+  width: 30px;
+  padding: 5px 0;
   font-size: rem(20px);
   border: 1px solid $brown;
   border-radius: 5px;
-  margin: 0 20px 0 10px;
-  position: relative;
-  &::before, &::after {    
-    position: absolute;
-    font-size: rem(24px);    
-  }
-  &::before {
-    content: "-";
-    left: -18px;
-    top: -2px;
-    cursor: pointer;
-  }
-  &::after {
-    content: "+";
-    top: -4px;
-    right: -18px;
-  }
+  text-align: center;
+}
+.catalog__control {
+  font-size: rem(22px);
+  font-weight: $mediumFont;
+  outline: none;
+}
+.catalog__control-link {
+  margin-left: 5px;
 }
 .catalog__count-btn {
   margin-top: 10px;
@@ -78,6 +71,6 @@
 }
 
 // костыль для JQuery UI
-.catalog__wrapper {
-  display: block;
-}
+// .catalog__wrapper {
+//   display: block;
+// }

@@ -5,13 +5,21 @@
 }
 .sorting__item {
   font-size: 12px;
+  margin-right: 10px;
+}
+.sorting__link {
   &::after {
     content: "";
     display: inline-block;
     font-size: 0;
-    margin: 0 10px 2px 2px;
+    margin-left:4px;
     border: 6px solid transparent;
+    border-bottom-color: $brown;
+    border-width: 0px 4px 8px;
+  }
+  &.is-active::after {
+    border-color: transparent;
     border-top-color: $brown;
-    border-width: 5px 5px 0px;
+    border-width: 8px 4px 0px;
   }
 }

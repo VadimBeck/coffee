@@ -13,13 +13,12 @@
     min-width: 0;
   }
 }
-
 .ui-slider-handle {
+  cursor: pointer!important;
   border-radius: 50%;
   box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.75);
   position: relative;
-  outline: none;
-  cursor: pointer;
+  outline: none;  
   &::after {
     content: "";
     width: 50%;
@@ -28,8 +27,18 @@
     background: $brown;
     position: absolute;
     z-index: -1;
-    left: 0;
-    top: 0;
-    transform: translate(50%, 50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
+}
+.ui-slider {
+  & .ui-state-active {
+      background: #fff;
+      border-color: #c5c5c5;
+      &:hover {
+        background: #fff;
+        border-color: #c5c5c5;
+      }
+    }
 }

@@ -49,6 +49,9 @@
 }
 .content__block-video {
   margin: 0 auto;
+  & iframe {
+    border: none;
+  }
 }
 @media screen and (max-width: 605px) {
   .content__block-video {
