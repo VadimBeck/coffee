@@ -21,8 +21,7 @@
 }
 .scrolled__goods {
   width: 70%;  
-  border-right: 1px dashed $lightBrown;
-  overflow: hidden;
+  border-right: 1px dashed $lightBrown;  
   transition: all .6s;
 
   @include laptop {
@@ -35,6 +34,10 @@
     flex-direction: column;
     width: 100%;    
     max-height: 0;
+    overflow: hidden;
+    & .goods__item:hover .goods__drop {
+      display: none;
+    } 
   }
 
   & .goods__link {
@@ -45,11 +48,7 @@
     @include tablets {
       border-top: 1px solid $lightBrown;
     }
-  } 
-
-  & .goods__item:hover .goods__drop {
-    display: none;
-  }  
+  }    
 }
 
 .scrolled__container {

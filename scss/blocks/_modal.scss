@@ -1,0 +1,46 @@
+.modal{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  @include flex(center, center);
+  z-index: 12;
+  display: none;
+  &.is-active{
+    display: flex;
+  }
+}
+.modal__inner{
+  max-width: 80%;
+  background-color: #e9e2de;
+  border-radius: 3px;
+  padding: rem(24px);
+  color: #6c2400;
+  position: relative;
+}
+.modal__close{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  right: 3px;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    width: 12px;
+    height: 3px;
+    background-color: #6c2400;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+.modal__title{
+  font-size: rem(24px);
+  margin-top: 10px;
+}

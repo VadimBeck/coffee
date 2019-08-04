@@ -8,6 +8,9 @@ body {
   font-weight: $regularFont;
   font-size: 14px;
   line-height: 1.42;
+  &.locked {
+    overflow: hidden;
+  }
 }
 .wrapper {
   width: 100%;

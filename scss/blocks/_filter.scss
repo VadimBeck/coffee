@@ -25,6 +25,9 @@
   @include laptop {
     width: 30%;
   }
+  @include phones {
+    width: 40%;
+  }
   &:last-child {
     @include phones {
       flex-direction: row;

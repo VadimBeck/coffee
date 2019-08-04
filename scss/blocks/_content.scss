@@ -23,7 +23,6 @@
     flex-direction: column;
   }
 }
-
 .content__block-elem {
   width: 25%;
   padding: 0 rem(15px);
@@ -34,15 +33,11 @@
   }
 }
 .content__block-desc {
-  //width: 45%;
   @include flex(center, center);
   flex-direction: column;
   text-align: center;
   padding: 0 rem(15px);
   margin: 0 auto;
-  // @include laptop {
-  //   width: 100%;
-  // }
   & p {
     padding: rem(10px);    
   }
