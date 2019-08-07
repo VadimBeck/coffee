@@ -9,7 +9,7 @@
 }
 .menu__list {
   @include flex(space-between, center);
-  flex: 0.8;
+  flex: 0.6;
   overflow: hidden;
   transition: all .6s;
   @include tablets {

@@ -29,6 +29,9 @@ body {
     align-items: center;
     max-width: 960px;
   }
+  &.container--inner {
+    width: 100%;
+  }
 }
 ul {
   margin: 0;

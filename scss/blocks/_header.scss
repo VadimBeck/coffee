@@ -45,6 +45,12 @@
   @include phones {
     width: 100%;
     align-self: center;
+  }  
+  &:first-child{
+    flex: 0.9;
+    @include laptop {
+      flex: 0 1 auto;
+    }  
   }
 }
 .header__icon {

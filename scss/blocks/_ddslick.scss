@@ -1,6 +1,6 @@
 .dd-container {
   & .dd-select{
-    border-radius: 5px;      
+    border-radius: 5px;     
   }
   & .dd-option {
     color: $brown;
@@ -21,12 +21,15 @@
   & .dd-selected {
     padding: 5px 25px 5px 10px;
     font-weight: normal;
+    max-width: 100%;
   }
   & .dd-selected-image{
     max-height: 1.5em;
+    margin-left: -5px;
   }
   & .dd-option-image{
     max-height: 1.5em;
+    max-width: 100%;
   }
   & .dd-pointer-down {    
     border-top: solid 5px $midBrown;

@@ -42,6 +42,11 @@
   margin: auto 0 auto 10px;
   text-align: center;
 }
+.catalog__count-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .catalog__count-num {
   width: 30px;
   padding: 5px 0;
@@ -49,6 +54,7 @@
   border: 1px solid $brown;
   border-radius: 5px;
   text-align: center;
+  margin: 0 3px;
 }
 .catalog__control {
   font-size: rem(22px);

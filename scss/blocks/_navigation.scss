@@ -27,16 +27,13 @@
 }
 .navigation__btn {
   position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    font-size: 0;
-    margin-left: 2px;
-    top: -7px;
-    border: 6px solid transparent;
-    border-top-color: $brown;
-    border-width: 6px 5px 0px;
-  }
+  display: inline-block;
+  font-size: 0;
+  margin-left: 2px;
+  top: -2px;
+  border: 6px solid transparent;
+  border-top-color: $brown;
+  border-width: 6px 5px 0px;
 }
 .navigation__inner {
   color: $midBrown;
