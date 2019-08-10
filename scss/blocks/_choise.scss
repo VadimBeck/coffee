@@ -1,0 +1,18 @@
+.choise {
+    width: 100%;
+    padding: 0 2px;
+}
+.choise__row{
+    display: flex;
+}
+.choise__text{
+    font-weight: $mediumFont;
+    color: $brown;
+    margin-right: auto;
+    margin-top: 2px;
+}
+.choise__field{
+    border-color: transparent;
+    margin: 0 auto;
+    padding: 0;
+}

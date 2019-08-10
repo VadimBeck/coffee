@@ -69,7 +69,7 @@
               </div>
               <div class="header__content-col">
                 <div class="calendar">
-                  <a href="#" class="calendar">
+                  <a href="#" class="calendar__link">
                     <span class="header__icon"><i class="fa fa-calendar-check-o"></i></span>
                     <span class="calendar__text">ПН-ПТ 09:00-18:00</span>
                   </a>
@@ -469,15 +469,40 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                
                 <div class="catalog__count">
                   <div class="catalog__count-row">
-                    <div class="catalog__price">По запросу</div>
+                    <div class="catalog__price">1257 руб.</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
                     <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <div class="catalog__count-row"></div>
+                  <div class="catalog__count-row dashed">
+                    <div class="choise">
+                      <div class="choise__row">
+                        <span class="choise__text">Основа:</span>
+                        <select name="choise" class="choise__select">
+                          <option value="1">Колумбия Supreme</option>
+                          <option value="2">Арабика Premium</option>                          
+                        </select>
+                      </div>
+                      <div class="choise__row">
+                        <fieldset class="choise__field">
+                          <label  class="choise__label" >100гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>                       
+                          <label  class="choise__label" >200гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >500гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >1000гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
                   <div class="catalog__count-row">
                     <button class="catalog__count-btn">В корзину</button>
                   </div>                  
@@ -496,16 +521,36 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">1257 руб.</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row dashed">
+                    <div class="choise">
+                      <div class="choise__row">
+                        <fieldset class="choise__field">
+                          <label  class="choise__label" >100гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>                       
+                          <label  class="choise__label" >200гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >500гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >1000гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
               <li class="page-content__item">
@@ -521,16 +566,16 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">1257 руб.</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
               <li class="page-content__item">
@@ -546,16 +591,43 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">По запросу</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row dashed">
+                    <div class="choise">
+                      <div class="choise__row">
+                        <span class="choise__text">Основа:</span>
+                        <select name="choise" class="choise__select">
+                          <option value="1">Колумбия Supreme</option>
+                          <option value="2">Арабика Premium</option>                          
+                        </select>
+                      </div>
+                      <div class="choise__row">
+                        <fieldset class="choise__field">
+                          <label  class="choise__label" >100гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>                       
+                          <label  class="choise__label" >200гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >500гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >1000гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
               <li class="page-content__item">
@@ -572,16 +644,36 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">По запросу</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row dashed">
+                    <div class="choise">
+                      <div class="choise__row">
+                        <fieldset class="choise__field">
+                          <label  class="choise__label" >100гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>                       
+                          <label  class="choise__label" >200гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >500гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >1000гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
               <li class="page-content__item">
@@ -597,16 +689,16 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">По запросу</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
               <li class="page-content__item">
@@ -622,16 +714,36 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">1257 руб.</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row dashed">
+                    <div class="choise">
+                      <div class="choise__row">
+                        <fieldset class="choise__field">
+                          <label  class="choise__label" >100гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>                       
+                          <label  class="choise__label" >200гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >500гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >1000гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
               <li class="page-content__item">
@@ -647,16 +759,43 @@
                     робуста.
                     Крепкий напиток с мягким вкусом.</p>
                 </div>
-                <div class="catalog__price">По запросу</div>
                 <div class="catalog__count">
                   <div class="catalog__count-row">
+                    <div class="catalog__price">1257 руб.</div>
                     <button class="catalog__control catalog__minus">-</button>
                     <input value="1" class="catalog__count-num">
-                    <button class="catalog__control catalog__plus">+</button>
-                    <a href="#" class="catalog__control-link"><span class="header__icon"><i
-                          class="fa fa-balance-scale"></i></span></a>
+                    <button class="catalog__control catalog__plus">+</button>                    
                   </div>
-                  <button class="catalog__count-btn">Купить</button>
+                  <div class="catalog__count-row dashed">
+                    <div class="choise">
+                      <div class="choise__row">
+                        <span class="choise__text">Основа:</span>
+                        <select name="choise" class="choise__select">
+                          <option value="1">Колумбия Supreme</option>
+                          <option value="2">Арабика Premium</option>                          
+                        </select>
+                      </div>
+                      <div class="choise__row">
+                        <fieldset class="choise__field">
+                          <label  class="choise__label" >100гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>                       
+                          <label  class="choise__label" >200гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >500гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                          <label  class="choise__label" >1000гр.
+                            <input type="radio" name="radio-1" class="choise__input">
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__count-row">
+                    <button class="catalog__count-btn">В корзину</button>
+                  </div>                  
                 </div>
               </li>
             </ul>
@@ -813,65 +952,54 @@
           <ul class="recommend__list">
             <li class="recommend__item">
               <div class="recommend__img">
-                <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
-                </a>
+                <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
               <a href="#" class="recommend__name">Марагоджил</a>
               <span class="recommend__price">500 руб.</span>
-              <button class="recommend__btn">Купить</button>
+              <a href="#" class="recommend__btn">Купить</a>
+              <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
+            </li>
+           <li class="recommend__item">
+              <div class="recommend__img">
+                <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
+              </div>
+              <a href="#" class="recommend__group">Ирландский крем</a>
+              <a href="#" class="recommend__name">Марагоджил</a>
+              <span class="recommend__price">500 руб.</span>
+              <a href="#" class="recommend__btn">Купить</a>
+              <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
+            </li>
+           <li class="recommend__item">
+              <div class="recommend__img">
+                <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
+              </div>
+              <a href="#" class="recommend__group">Ирландский крем</a>
+              <a href="#" class="recommend__name">Марагоджил</a>
+              <span class="recommend__price">500 руб.</span>
+              <a href="#" class="recommend__btn">Купить</a>
               <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
             </li>
             <li class="recommend__item">
               <div class="recommend__img">
-                <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
-                </a>
+                <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
               <a href="#" class="recommend__name">Марагоджил</a>
               <span class="recommend__price">500 руб.</span>
-              <button class="recommend__btn">Купить</button>
+              <a href="#" class="recommend__btn">Купить</a>
               <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
             </li>
-            <li class="recommend__item">
+           <li class="recommend__item">
               <div class="recommend__img">
-                <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
-                </a>
+                <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
               </div>
               <a href="#" class="recommend__group">Ирландский крем</a>
               <a href="#" class="recommend__name">Марагоджил</a>
               <span class="recommend__price">500 руб.</span>
-              <button class="recommend__btn">Купить</button>
+              <a href="#" class="recommend__btn">Купить</a>
               <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
             </li>
-            <li class="recommend__item">
-              <div class="recommend__img">
-                <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
-                </a>
-              </div>
-              <a href="#" class="recommend__group">Ирландский крем</a>
-              <a href="#" class="recommend__name">Марагоджил</a>
-              <span class="recommend__price">500 руб.</span>
-              <button class="recommend__btn">Купить</button>
-              <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
-            </li>
-            <li class="recommend__item">
-              <div class="recommend__img">
-                <a href="#" class="recommend__link">
-                  <img src="./img/catalog/recomend.jpg" alt class="recommend__img-pic">
-                </a>
-              </div>
-              <a href="#" class="recommend__group">Ирландский крем</a>
-              <a href="#" class="recommend__name">Марагоджил</a>
-              <span class="recommend__price">500 руб.</span>
-              <button class="recommend__btn">Купить</button>
-              <div class="recommend__type">Вид кофе <span class="recomend__type-inner">Купажи</span></div>
-            </li>
-
           </ul>
         </div>
       </main>
@@ -969,7 +1097,7 @@
     <div class="modal">
       <div class="modal__inner">
         <button class="modal__close"></button>
-        <h3 class="modal__title">Товар успешно добавлен в список сравнения</h3>
+        <h3 class="modal__title">Товар успешно добавлен в корзину</h3>
       </div>
     </div>
   </div>

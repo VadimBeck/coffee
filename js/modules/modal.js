@@ -42,7 +42,7 @@ const modal = (function(){
 }());
 
 document.body.addEventListener("click", (e)=> {
-  if(e.target.parentElement.parentElement.classList.contains("catalog__control-link")){
+  if(e.target.classList.contains("catalog__count-btn")){
     e.preventDefault();
     modal.open();
   }

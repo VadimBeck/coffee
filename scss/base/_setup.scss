@@ -31,6 +31,9 @@ body {
   }
   &.container--inner {
     width: 100%;
+    @include tablets {
+      width: 90%;
+    }
   }
 }
 ul {

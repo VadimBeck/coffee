@@ -29,6 +29,9 @@
 .catalog__content {
   & p {
     font-size: 14px;
+    @include phones {
+      text-align: justify;
+    }
   }
 }
 .catalog__price {
@@ -37,10 +40,20 @@
   color: $red;
   align-self: center;
   padding: 5px;
+  margin-right: auto;
+  font-weight: $mediumFont;
 }
 .catalog__count{
-  margin: auto 0 auto 10px;
+  margin: auto 0;
   text-align: center;
+  min-width: 220px;
+  padding: 3px 3px 3px 10px;
+  &--product {
+    min-width: 0;
+  }
+  @include tablets {
+    width: auto;
+  }
 }
 .catalog__count-row {
   display: flex;
@@ -72,7 +85,18 @@
   min-width: 125px;
   font-size: rem(18px);
   color: #fff;
+  margin-left: auto;
+  @include phones {
+    margin-left: 0;
+  }  
 }
 .catalog__count-btn--small {
   font-size: rem(16px);
+}
+.dashed{
+  border-top: 1px dashed $brown;
+  border-bottom: 1px dashed $brown;
+  background-color: $lightBeige;
+  padding: 10px 0;
+  margin-top: 2px;
 }

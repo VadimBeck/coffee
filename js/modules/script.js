@@ -43,7 +43,10 @@ $(function () {
       menu.style.maxHeight = "none";      
       }
     }
-    $("#city").selectmenu();
+    $(".choise__select").selectmenu();
+    $(".choise__input").checkboxradio({
+      icon: false
+    });
   
     $(".ui-slider").slider({
       min: 0,

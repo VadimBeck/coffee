@@ -1,0 +1,25 @@
+.choise__label.ui-button {
+  background-color: #a18e87;
+  color: #fff;
+  font-weight: 500;
+  &:hover, &:active {
+    color: #fff;
+    background-color: $brown;
+    border-color: $brown;
+    }
+  &.ui-checkboxradio-checked{
+    background-color: $brown;
+    color: #fff;
+  }
+}
+.ui-checkboxradio-checked.ui-state-active {
+  border-color: $brown;
+  &:hover, &:active {
+    color: #fff;
+    background-color: $brown;
+    border-color: $brown;
+  }
+}
+.ui-visual-focus {
+  box-shadow: none;
+}

@@ -2,8 +2,15 @@
   @include flex (flex-start, center);
   flex-direction: column;
   padding: rem(50px) 0;
-  width: 100%;  
+  width: 100%;
+  &.content--main-page {
+    position: relative;
+    top: -55px;
+    background-color: #fff;
+    z-index: 2;
+  }
 }
+
 .content__lines {
   width: 95%;
   height: 6px;

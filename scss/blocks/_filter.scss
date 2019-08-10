@@ -62,8 +62,14 @@
   border-radius: 5px;
   font-style: italic;
   align-self: flex-start;
+  margin-bottom: 8px;
   @include laptop {
     align-self: stretch;
+  }
+  @include phones {
+    margin-bottom: 0;
+    margin-right: 20px;
+    flex: .9;
   }
 }
 .filter__reset {
@@ -72,7 +78,7 @@
   padding: 4px 21px;
   border-radius: 5px;
   font-style: italic;
-  margin-top: 8px;
+  
   align-self: flex-start;
   @include laptop {
     align-self: stretch;
