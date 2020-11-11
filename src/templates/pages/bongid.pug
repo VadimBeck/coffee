@@ -1,0 +1,124 @@
+extends ../layout
+
+block menu
+  +menu("Бонгид")
+
+block header
+  include ../blocks/header
+
+block maincontent
+  .container
+    .content
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='./index.html') Главная
+          li.breadcrumbs__item.breadcrumbs__item--active
+            a.breadcrumbs__link Бонгид
+      h1.page-title Бонгид
+      .container.container--inner
+        main.page-content
+          ul.page-content__list
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/01.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ИСТОРИЯ КОФЕ: АФРИКАНСКИЙ ПЕРИОД
+                p
+                  | Родиной кофе принято называть Эфиопию. Именно на ее территории кофейное дерево произрастало в лесах и не возделывалось человеком.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/02.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ИСТОРИЯ КОФЕ: АРАБСКИЙ ПЕРИОД
+                p Первые плантации с кофейными деревьями появились в Йемене.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/03.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ИСТОРИЯ КОФЕ: КОЛОНИАЛЬНЫЙ ПЕРИОД
+                p
+                  | Практически все европейские державы предприняли попытки выращивать кофе в своих колониях.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/04.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ИСТОРИЯ КОФЕ: РОССИЯ
+                p Появление и распространение в России любимого напитка царей.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/05.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 КОФЕЙНОЕ ДЕРЕВО: НЕМНОГО БОТАНИКИ
+                p
+                  | На нашей планете насчитывается свыше 6 млрд. кофейных деревьев, а занимаемая ими площадь составляет 4,5 млн. га. Это второй по ценности продукт в мире (после нефти).
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/06.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ВИДЫ КОФЕЙНОГО ДЕРЕВА: АРАБИКА И РОБУСТА
+                p
+                  | К роду кофе относят около сотни видов растений. Но специально из них выращивают только аравийское и конголезское деревья. Обычно их называют арабика и робуста.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/07.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 КЛИМАТИЧЕСКИЕ УСЛОВИЯ ВЫРАЩИВАНИЯ КОФЕ
+                p
+                  | Хорошие кофейные зерна должны долго созревать.  Только при таких условиях в них накапливается много эфирных масел, которым мы обязаны и пользой, и ароматом.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/08.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ЭТАПЫ ПРОИЗВОДСТВА КОФЕ: ВЫРАЩИВАНИЕ
+                p
+                  | Кофе выращивают примерно в 50ти странах, расположенных в так называемом «кофейном поясе земли» (между тропиком Рака и тропиком Козерога).
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/09.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ЭТАПЫ ПРОИЗВОДСТВА КОФЕ: СБОР
+                p
+                  | Плоды аравийского дерева, как только они поспеют, необходимо немедленно собрать. Трудность заключается в том, что на одной ветке растут ягоды, находящиеся на разных стадиях созревания.
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/bongid/10.jpg' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 ЭТАПЫ ПРОИЗВОДСТВА КОФЕ: СУХАЯ ОБРАБОТКА КОФЕЙНЫХ ЗЕРЕН
+                p
+                  | Сухой метод известен с давних времен и заключается в том, что плоды кофе рассыпают слоем в несколько сантиметров под солнцем.
+          .pagination
+            .pagination__controls
+              span.pagination__listing.pagination__listing--active
+                a.pagination__prev Назад
+              ul.pagination__pages
+                li.pagination__pages-item.pagination__pages-item--active
+                  a.pagination__link 1
+                li.pagination__pages-item
+                  a.pagination__link(href='#') 2
+              span.pagination__listing
+                a.pagination__next(href='#') Вперед
+        
+        include ../blocks/sidebar
+
+include ../mixins/menu

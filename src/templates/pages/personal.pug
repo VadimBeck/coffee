@@ -1,0 +1,50 @@
+extends ../layout
+
+block menu
+  +menu("")
+
+block header
+  include ../blocks/header
+
+block maincontent
+  .container
+    main.content
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='./index.html') Главная
+          li.breadcrumbs__item.breadcrumbs__item--active
+            a.breadcrumbs__link Личный кабинет пользователя
+      section.personal
+        h1.page-title Авторизация
+        span.personal-text Пожалуйста, авторизуйтесь:
+        form(name='auth__form' action='#')
+          table.auth__table
+            tbody
+              tr
+                td.auth__table-label Логин:
+                td.auth__table-row
+                  input.auth__table-input(type='text' name='USER_LOGIN' maxlength='255' value='')
+              tr
+                td.auth__table-row.auth__table-label Пароль:
+                td.auth__table-row
+                  input.auth__table-input(type='password' name='USER_PASSWORD' maxlength='255' autocomplete='off')
+              tr
+                td
+                td.auth__table-row
+                  input#USER_REMEMBER.auth__table-text(type='checkbox' name='USER_REMEMBER' value='Y')
+                  label(for='USER_REMEMBER')  Запомнить меня на этом компьютере
+              tr
+                td.auth__table-row
+                td.auth__table-row
+                  input.personal__btn(type='submit' name='Login' value='Войти')
+        noindex
+          span
+            a.personal__link(href='#' rel='nofollow') Забыли свой пароль?
+        noindex
+          span
+            a.personal__link(href='#' rel='nofollow') Зарегистрироваться
+            |               Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.
+
+include ../mixins/menu
+

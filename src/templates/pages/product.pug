@@ -1,0 +1,105 @@
+extends ../layout
+
+block menu
+  +menu("")
+
+block header
+  include ../blocks/header
+
+block maincontent
+  .container
+    main.content
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='./index.html') Главная
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='#') Каталог
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='#') Кофе
+          li.breadcrumbs__item.breadcrumbs__item--active
+            a.breadcrumbs__link Кофе в капсулах
+      .container.container--inner
+        .page-content
+          .page-content__item
+            .page-content__img.page-content__img--product
+              a(href='./product.html')
+                img.page-content__img-pic(src='./img/catalog/catalog_4.png' alt='')
+            .page-content__text.catalog__content
+              a(href='./product.html')
+                h2 АЛЬМА ДИ КАФЕ (капсулы)
+              .catalog__link-wrap
+                a.catalog__link(href='./catalog.html') Кофе в капсулах
+              p
+                | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                | робуста.
+                | Крепкий напиток с мягким вкусом.
+            .catalog__count.catalog__count--product
+              .catalog__count-row
+                .catalog__price 1257 руб.
+                button.catalog__control.catalog__minus -
+                input.catalog__count-num(value='1')
+                button.catalog__control.catalog__plus +
+              button.catalog__count-btn Купить
+              button.catalog__count-btn.catalog__count-btn--small Купить в 1 клик
+          .page-content__info
+            a.page-content__info-link(href='#') Рецепты кофе
+            a.page-content__info-link(href='#')  Отзывы (0)
+
+        include ../blocks/sidebar
+        
+      .recommend
+        .recommend__top Персональные рекомендации:
+        ul.recommend__list
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+
+include ../mixins/menu

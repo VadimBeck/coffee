@@ -1,0 +1,69 @@
+.filter
+  form.filter__form(action='#')
+    .filter__row
+      .filter__col
+        .filter__col-name Страна
+        select#select1.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1') Азия и Океания
+          option.filter__option(value='2') Америка
+          option.filter__option(value='3') Африка
+      .filter__col
+        .filter__col-name Вид кофе
+        select#select2.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1') Десертные
+          option.filter__option(value='2') Купажи
+          option.filter__option(value='3') Моносорта
+      .filter__col
+        .filter__col-name Степень обжарки
+        select#select3.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1') Сильная
+          option.filter__option(value='2') Средняя
+      .filter__col
+        .filter__col-name Кислинка
+        select#select4.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1' data-imagesrc='./img/coffee.png' label='one')
+          option.filter__option(value='2' data-imagesrc='./img/coffee2.png' label='two')
+          option.filter__option(value='3' data-imagesrc='./img/coffee3.png' label='three')
+          option.filter__option(value='4' data-imagesrc='./img/coffee4.png' label='four')
+          option.filter__option(value='5' data-imagesrc='./img/coffee5.png' label='five')
+      .filter__col
+        .filter__col-name Сладость
+        select#select5.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1' data-imagesrc='./img/coffee.png' label='one')
+          option.filter__option(value='2' data-imagesrc='./img/coffee2.png' label='two')
+          option.filter__option(value='3' data-imagesrc='./img/coffee3.png' label='three')
+          option.filter__option(value='4' data-imagesrc='./img/coffee4.png' label='four')
+      .filter__col
+        .filter__col-name Горчинка
+        select#select6.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1' data-imagesrc='./img/coffee.png' label='one')
+          option.filter__option(value='2' data-imagesrc='./img/coffee2.png' label='two')
+          option.filter__option(value='3' data-imagesrc='./img/coffee3.png' label='three')
+          option.filter__option(value='4' data-imagesrc='./img/coffee4.png' label='four')
+      .filter__col
+        .filter__col-name Крепость
+        select#select7.select
+          option.filter__option(value='0') Все
+          option.filter__option(value='1' data-imagesrc='./img/coffee.png' label='one')
+          option.filter__option(value='2' data-imagesrc='./img/coffee2.png' label='two')
+          option.filter__option(value='3' data-imagesrc='./img/coffee3.png' label='three')
+          option.filter__option(value='4' data-imagesrc='./img/coffee4.png' label='four')
+          option.filter__option(value='5' data-imagesrc='./img/coffee5.png' label='five')
+      .filter__col
+        .filter__col-name Цена
+        .ui-slider
+        .filter__price
+          span.filter__price-text От
+          input.filter__price-val.filter__price-min(type='text' size='3' value='0')
+          span.filter__price-text до
+          input.filter__price-val.filter__price-max(type='text' size='3' value='9999')
+          span.filter__price-text руб
+      .filter__col
+        button.filter__btn Применить
+        button.filter__reset Сбросить

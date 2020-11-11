@@ -1,0 +1,390 @@
+extends ../layout
+
+block menu
+  +menu("")
+
+block header
+  include ../blocks/header
+
+block maincontent
+  .container
+    main.content
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='./index.html') Главная
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='#') Каталог
+          li.breadcrumbs__item.breadcrumbs__item--active
+            a.breadcrumbs__link Кофе
+      
+      include ../blocks/filter
+
+      ul.sorting
+        li.sorting__item
+          a.sorting__link(href='#') По названию
+        li.sorting__item
+          a.sorting__link(href='#') По популярности
+        li.sorting__item
+          a.sorting__link.is-active(href='#') По цене
+      .container.container--inner
+        .page-content
+          ul.page-content__list
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_1.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 АЛЬМА ДИ КАФЕ (капсулы)
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Кофе в капсулах
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price 1257 руб.
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row.dashed
+                  .choise
+                    .choise__row
+                      span.choise__text Основа:
+                      select.choise__select(name='choise')
+                        option(value='1') Колумбия Supreme
+                        option(value='2') Арабика Premium
+                    .choise__row
+                      fieldset.choise__field
+                        label.choise__label
+                          | 100гр.
+                          input.choise__input(type='radio' name='radio-1' checked='')
+                        label.choise__label
+                          | 200гр.
+                          input.choise__input(type='radio' name='radio-1')
+                        label.choise__label
+                          | 500гр.
+                          input.choise__input(type='radio' name='radio-1')
+                        label.choise__label
+                          | 1000гр.
+                          input.choise__input(type='radio' name='radio-1')
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_2.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 Бабл гамм
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Десертные
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price 1257 руб.
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row.dashed
+                  .choise
+                    .choise__row
+                      fieldset.choise__field
+                        label.choise__label
+                          | 100гр.
+                          input.choise__input(type='radio' name='radio-2' checked='')
+                        label.choise__label
+                          | 200гр.
+                          input.choise__input(type='radio' name='radio-2')
+                        label.choise__label
+                          | 500гр.
+                          input.choise__input(type='radio' name='radio-2')
+                        label.choise__label
+                          | 1000гр.
+                          input.choise__input(type='radio' name='radio-2')
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_3.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 КРЕМ-КАРАМЕЛЬ (с ароматом попкорна)
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Десертные
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price 1257 руб.
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_4.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 Эспрессо №1
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Купажи
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price По запросу
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row.dashed
+                  .choise
+                    .choise__row
+                      span.choise__text Основа:
+                      select.choise__select(name='choise')
+                        option(value='1') Колумбия Supreme
+                        option(value='2') Арабика Premium
+                    .choise__row
+                      fieldset.choise__field
+                        label.choise__label
+                          | 100гр.
+                          input.choise__input(type='radio' name='radio-3' checked='')
+                        label.choise__label
+                          | 200гр.
+                          input.choise__input(type='radio' name='radio-3')
+                        label.choise__label
+                          | 500гр.
+                          input.choise__input(type='radio' name='radio-3')
+                        label.choise__label
+                          | 1000гр.
+                          input.choise__input(type='radio' name='radio-3')
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_1.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 АЛЬМА ДИ КАФЕ (капсулы)
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Кофе в капсулах
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price По запросу
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row.dashed
+                  .choise
+                    .choise__row
+                      fieldset.choise__field
+                        label.choise__label
+                          | 100гр.
+                          input.choise__input(type='radio' name='radio-4' checked='')
+                        label.choise__label
+                          | 200гр.
+                          input.choise__input(type='radio' name='radio-4')
+                        label.choise__label
+                          | 500гр.
+                          input.choise__input(type='radio' name='radio-4')
+                        label.choise__label
+                          | 1000гр.
+                          input.choise__input(type='radio' name='radio-4')
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_2.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 Бабл гамм
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Десертные
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price По запросу
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_3.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 КРЕМ-КАРАМЕЛЬ (с ароматом попкорна)
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Десертные
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price 1257 руб.
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row.dashed
+                  .choise
+                    .choise__row
+                      fieldset.choise__field
+                        label.choise__label
+                          | 100гр.
+                          input.choise__input(type='radio' name='radio-5' checked='')
+                        label.choise__label
+                          | 200гр.
+                          input.choise__input(type='radio' name='radio-5')
+                        label.choise__label
+                          | 500гр.
+                          input.choise__input(type='radio' name='radio-5')
+                        label.choise__label
+                          | 1000гр.
+                          input.choise__input(type='radio' name='radio-5')
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+            li.page-content__item
+              .page-content__img
+                a(href='./product.html')
+                  img.page-content__img-pic(src='./img/catalog/catalog_4.png' alt='')
+              .page-content__text.catalog__content
+                a(href='./product.html')
+                  h2 Эспрессо №1
+                .catalog__link-wrap
+                  a.catalog__link(href='./catalog.html') Купажи
+                p
+                  | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
+                  | робуста.
+                  | Крепкий напиток с мягким вкусом.
+              .catalog__count
+                .catalog__count-row
+                  .catalog__price 1257 руб.
+                  button.catalog__control.catalog__minus -
+                  input.catalog__count-num(value='1')
+                  button.catalog__control.catalog__plus +
+                .catalog__count-row.dashed
+                  .choise
+                    .choise__row
+                      span.choise__text Основа:
+                      select.choise__select(name='choise')
+                        option(value='1') Колумбия Supreme
+                        option(value='2') Арабика Premium
+                    .choise__row
+                      fieldset.choise__field
+                        label.choise__label
+                          | 100гр.
+                          input.choise__input(type='radio' name='radio-6' checked='')
+                        label.choise__label
+                          | 200гр.
+                          input.choise__input(type='radio' name='radio-6')
+                        label.choise__label
+                          | 500гр.
+                          input.choise__input(type='radio' name='radio-6')
+                        label.choise__label
+                          | 1000гр.
+                          input.choise__input(type='radio' name='radio-6')
+                .catalog__count-row
+                  button.catalog__count-btn В корзину
+          .pagination
+            .pagination__controls
+              span.pagination__listing.pagination__listing--active
+                a.pagination__prev Назад
+              ul.pagination__pages
+                li.pagination__pages-item.pagination__pages-item--active
+                  a.pagination__link 1
+                li.pagination__pages-item
+                  a.pagination__link(href='#') 2
+                li.pagination__pages-item
+                  a.pagination__link(href='#') 3
+                li.pagination__pages-item
+                  a.pagination__link(href='#') 4
+                li.pagination__pages-item
+                  a.pagination__link(href='#') 5
+              span.pagination__listing
+                a.pagination__next(href='#') Вперед
+
+        include ../blocks/sidebar
+
+      .recommend
+        .recommend__top Персональные рекомендации:
+        ul.recommend__list
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+          li.recommend__item
+            .recommend__img
+              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
+            a.recommend__group(href='#') Ирландский крем
+            a.recommend__name(href='#') Марагоджил
+            span.recommend__price 500 руб.
+            a.recommend__btn(href='#') Купить
+            .recommend__type
+              | Вид кофе 
+              span.recomend__type-inner Купажи
+  .modal
+    .modal__inner
+      button.modal__close
+      h3.modal__title Товар успешно добавлен в корзину
+
+include ../mixins/menu

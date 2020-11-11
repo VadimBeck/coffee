@@ -1,0 +1,44 @@
+extends ../layout
+
+block menu
+  +menu("")
+
+block header
+  include ../blocks/header
+
+block maincontent
+  .container
+    main.content
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='./index.html') Главная
+          li.breadcrumbs__item.breadcrumbs__item--active
+            a.breadcrumbs__link Личный кабинет пользователя
+      section.personal
+        h1.page-title Регистрация нового пользователя
+        span.personal-text
+          strong Регистрация
+        .registration
+          form.registration__form(action='#')
+            .registration__row
+              .registration__text Логин (мин. 3 символа):*
+              input.registration__input(type='text')
+            .registration__row
+              .registration__text Пароль:*
+              input.registration__input(type='password')
+            .registration__row
+              .registration__text Подтверждение пароля:*
+              input.registration__input(type='password')
+            .registration__row
+              .registration__text Адрес e-mail:*
+              input.registration__input(type='text')
+            .registration__row
+              .registration__text ФИО:*
+              input.registration__input(type='text')
+            .registration__submit
+              buttton.personal__btn.registration__btn Регистрация
+        span.personal-text Пароль должен быть не менее 6 символов длиной.
+        span.personal-text *Поля, обязательные для заполнения.
+
+include ../mixins/menu

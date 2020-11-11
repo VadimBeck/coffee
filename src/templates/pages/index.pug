@@ -1,0 +1,64 @@
+extends ../layout
+
+block menu
+  +menu("")
+
+block header
+  .header__main-wrapper
+    include ../blocks/header
+
+block maincontent
+  .maincontent
+    .slider
+      .owl-carousel
+        div
+          img(src='./img/slider/slide_1.jpg' alt='')
+        div
+          img(src='./img/slider/slide_2.jpg' alt='')
+        div
+          img(src='./img/slider/slide_3.jpg' alt='')
+      .slider__desc
+        h1.slider__desc-title Продукция произведена компанией ООО "Царское Подворье"
+    .container
+      main.content.content--main-page
+        .content__lines
+        section.content__block
+          .section-title
+            h2.section-title__text Хиты продаж
+          p Неверный информационный блок
+        section.content__block
+          .section-title
+            h2.section-title__text Новости
+          .content__block-row
+            .content__block-elem.article
+              img.article__img(src='./img/news/news_01.png' alt='Открытие нового сайта')
+              h4
+                a(href='#') Начал работать фирменный интернет-магазин "Царского Подворья"!
+              time(datetime='2018-07-01') 01.07.2018
+              p
+                | В компанию "Царское Подворье" часто поступают звонки и письма с вопросом "где можно купить ваш кофе?"
+                br
+                |                   Нас радует подобное внимание, ведь это доказательство качества наших продуктов.
+                br
+                |                   Не смотря на широкую сеть дистрибьюторов по всей России, не все позиции нашего широкого ассортимента
+                |                   легко купить.
+                br
+                |                   Специально для настоящих и будущих поклонников "Царского подворья" мы запустили интернет-магазин. В нем
+                |                   представлены все 278 видов кофе, которые мы производим. Так же в нем можно найти наш чай, мармелад,
+                |                   драже и кофейную посуду.
+        section.content__block
+          .section-title
+            h2.section-title__text Отзывы
+          .content__block-row.content__block-media
+            .content__block-video
+              iframe(width='560' height='315' src='https://www.youtube.com/embed/YLVJ9KwKJqA' allowfullscreen='')
+            .content__block-desc
+              p
+                | Кофе – самый популярный утренний напиток у людей всего мира. Кому-то
+                | нравится растворимый кофе, на который уходит минимум времени, кто-то предпочитает качественный молотый
+                | продукт. Но самым идеальным считается кофе в зёрнах.
+              p
+                | Чтобы получить настоящее удовольствие от вкуса и запаха напитка, нужно
+                | знать, как правильно выбрать зерна и как отличить хороший кофе от некачественного.
+
+include ../mixins/menu

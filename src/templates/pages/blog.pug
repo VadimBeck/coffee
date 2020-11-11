@@ -1,0 +1,40 @@
+extends ../layout
+
+block menu
+  +menu("Блог")
+
+block header
+  include ../blocks/header
+
+block maincontent
+  .container
+    .content
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href='./index.html') Главная
+          li.breadcrumbs__item.breadcrumbs__item--active
+            a.breadcrumbs__link Блог
+      h1.page-title Блог
+      .container.container--inner
+        main.page-content
+          ul.page-content__list
+            li.page-content__item
+              .page-content__img
+                a(href='#')
+                  img.page-content__img-pic(src='./img/news/news_01.png' alt='')
+              .page-content__text
+                a(href='#')
+                  h2 Начал работать фирменный интернет-магазин "Царского Подворья"!
+                p
+                  | В компанию "Царское Подворье" часто поступают  звонки и письма с вопросом "где можно купить ваш кофе?".
+                  br
+                  |                     Нас радует подобное внимание, ведь это доказательство качества наших продуктов. 
+                  br
+                  |                     Не смотря на широкую сеть дистрибьюторов по всей России, не все позиции нашего широкого ассортимента легко купить.
+                  br
+                  |                     Специально для настоящих и будущих поклонников "Царского подворья" мы запустили интернет-магазин. В нем представлены все 278 видов кофе, которые мы производим. Так же в нем можно найти наш чай, мармелад, драже и кофейную посуду.
+        
+        include ../blocks/sidebar
+
+include ../mixins/menu

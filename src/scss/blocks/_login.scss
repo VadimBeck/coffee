@@ -1,0 +1,25 @@
+.login {
+  @include flex(center, center);
+  align-self: center;
+}
+ .login__link {
+   display: inline-block;
+}
+// .login__name{
+//   font-size: rem(13px);
+//   color:#fff;
+//   //border-bottom: 1px solid #fff;
+//   text-decoration: underline;
+//   //transition: .3s;
+//   &:hover {
+//     //border-color: transparent;
+//     text-decoration: none;
+//   }
+// }
+// .login__btn {
+//   color: #fff;
+//   background-color: $red;
+//   padding: rem(5px) rem(10px);
+//   border-radius: 3px;
+//   margin-left: 5px;
+// }

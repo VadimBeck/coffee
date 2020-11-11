@@ -1,0 +1,118 @@
+header.header
+  .container
+    .logo
+      a.logo__link(href='./index.html')
+        img.logo__pic(src='./img/header/logo.png' alt='Компания Bonka')
+    .header__content
+      .header__content-row
+        .header__content-col.header__wrap
+          .city__wrap
+            select#city(name='city')
+              option(value='Москва' selected='') Москва
+        .header__content-col.header__wrap
+          form.search(action='#')
+            .search__inner
+              input.search__input(type='text' placeholder='Поиск')
+              button.search__btn
+                i.fa.fa-search
+        .header__content-col
+          .phones
+            span.header__icon
+              i.fa.fa-phone-square
+            span.phones__wrap
+              a.phones__link(href='tel:#') +7(495) 510-52-18
+              a.phones__link(href='tel:#') +7(925) 031-13-37
+        .header__content-col
+          .compare
+            a.compare__link(href='#')
+              span.header__icon
+                i.fa.fa-balance-scale
+              span.compare__text
+                | В сравнении 
+                span.compare__count 0
+        .header__content-col
+          .cart
+            a.cart__link(href='#')
+              .cart__img
+                span.header__icon
+                  i.fa.fa-shopping-bag
+              .cart__text
+                span.cart__count-text Товаров
+                span.cart__count-num 0
+                br
+                span.cart__sum-text На сумму
+                span.cart__sum-num 0 руб
+      .header__content-row
+        ul.goods
+          li.goods__item
+            a.goods__link(href='./catalog.html')
+              img.goods__img(src='./img/header/coffee-icon.png' alt='')
+              span.goods__text Кофе
+            .goods__drop
+              ul.goods__drop-list
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Десертные
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Зерновой кофе в пакетах дой пак с застежкой зип лок
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Кофе в капсулах
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Купажи
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Молотый кофе в подарочной упаковке
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Плантационные
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Плантационный кофе
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Элитные
+          li.goods__item
+            a.goods__link(href='#')
+              img.goods__img(src='./img/header/tea-icon.png' alt='')
+              span.goods__text Чай
+            .goods__drop
+              ul.goods__drop-list
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Ароматизированный зеленый чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Ароматизированный черный чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Белый чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Жасминовый чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Классический зеленый чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Классический черный чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Композиционный чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Пу Эр
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Связанный чай
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Улун
+                li.goods__drop-item
+                  a.goods__drop-link(href='#') Чайные напитки
+          li.goods__item
+            a.goods__link(href='#')
+              img.goods__img(src='./img/header/dishes.png' alt='')
+              span.goods__text Посуда
+          li.goods__item
+            a.goods__link(href='#')
+              img.goods__img(src='./img/header/sweet-icon.png' alt='')
+              span.goods__text Сладости
+          li.goods__item
+            a.goods__link(href='#')
+              img.goods__img(src='./img/header/sugar-icon.png' alt='')
+              span.goods__text Сахар
+          li.goods__item
+            a.goods__link(href='#')
+              img.goods__img(src='./img/header/coffeemachine-icon.png' alt='')
+              span.goods__text Кофемашины
+          li.goods__item
+            a.goods__link(href='#')
+              span.goods__text Кофе в  шоколаде
+          li.goods__item
+            a.goods__link(href='#')
+              span.goods__text Прочее
