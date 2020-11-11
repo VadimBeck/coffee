@@ -47,7 +47,7 @@ function watch() {
    });
    
    gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))
-   gulp.watch('./src/scripts/modules/*.js', gulp.series('scripts'))
+   gulp.watch('./src/js/modules/*.js', gulp.series('scripts'))
    gulp.watch('./src/templates/pages/*.pug', gulp.series('pug'))
    gulp.watch("./dist/*.html").on('change', browserSync.reload);
  }
