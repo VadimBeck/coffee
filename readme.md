@@ -1,8 +1,6 @@
-## Бекитко Вадим
+## Верстка сайта Bonkashop
 
-# Верстка сайта Bonkashop
-
-##  Чтобы развернуть проект необходимо:
+###  Чтобы развернуть проект необходимо:
 ```sh
 $ git clone git@github.com:VadimBeck/coffee.git
 $ cd coffee
