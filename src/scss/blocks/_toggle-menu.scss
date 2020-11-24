@@ -19,11 +19,11 @@
   position: relative;
   height: 2px;
   width: 22px;
-  background: #888;
+  background: #fff;
   &::before, &::after {
     content: "";
     position: absolute;
-    background: #888;
+    background: #fff;
     height: 2px;
     width: 22px;
     left: 0;

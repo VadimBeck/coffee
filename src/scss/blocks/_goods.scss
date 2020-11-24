@@ -23,7 +23,7 @@
  }
  .goods__text {
    display: inline-block;
-   max-width: rem(100px);
+   display: block;
    @include laptop {
      max-width: none;
    }
@@ -35,7 +35,7 @@
    left: 0;
    top: 100%;
    min-width: rem(200px);
-   color: $midBrown;
+   color: $dark;
    border: 1px solid $beige;
    border-radius: 4px;
    padding: 8px 12px 0;

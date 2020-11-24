@@ -44,7 +44,7 @@
     margin-bottom: rem(10px);
     border-bottom: 1px solid transparent;
     transition: .3s;
-    color: $brown;
+    color: $green;
     display: inline-block;
     font-weight: $mediumFont;
   } 
@@ -56,18 +56,18 @@
   }
   & p {
     font-size: rem(12px);
-    color: #333;
+    color: $grey;
   }
 }
 .page-content__info {
   width: 100%;
   text-align: center;
   font-size: 16px;
-  color: $brown;
+  color: $dark;
 }
 .page-content__info-link {
   margin: 0 20px;
-  border-bottom: 1px solid $brown;
+  border-bottom: 1px solid $dark;
   padding: 5px 0;
   transition: .4s;
   &:hover {

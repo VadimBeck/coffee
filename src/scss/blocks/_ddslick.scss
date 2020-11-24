@@ -3,10 +3,10 @@
     border-radius: 5px;     
   }
   & .dd-option {
-    color: $brown;
+    color: $green;
     border-bottom: 1px dashed #e0d5cf;
     &:hover {
-      color: $brown;
+      color: $green;
       background: none;
       border-bottom: 1px solid #e0d5cf;
     }
@@ -32,10 +32,10 @@
     max-width: 100%;
   }
   & .dd-pointer-down {    
-    border-top: solid 5px $midBrown;
+    border-top: solid 5px $green;
   }
   & .dd-pointer-up {
     border: solid 5px transparent;
-    border-bottom: solid 5px $midBrown;
+    border-bottom: solid 5px $green;
   }
 }

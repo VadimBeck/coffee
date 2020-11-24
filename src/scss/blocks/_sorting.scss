@@ -14,12 +14,12 @@
     font-size: 0;
     margin-left:4px;
     border: 6px solid transparent;
-    border-bottom-color: $brown;
+    border-bottom-color: $dark;
     border-width: 0px 4px 8px;
   }
   &.is-active::after {
     border-color: transparent;
-    border-top-color: $brown;
+    border-top-color: $dark;
     border-width: 8px 4px 0px;
   }
 }

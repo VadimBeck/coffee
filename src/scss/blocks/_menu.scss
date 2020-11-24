@@ -1,6 +1,10 @@
 .menu {
-  background-color: $brown;
-  color: #fff;  
+  background-color: $green;
+  color: #fff;
+  margin: 8px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0px 0px 4px 4px rgba(8, 8, 8, 0.66);
   @include flex(space-between, center);
   flex-shrink: 0;
   min-height: 50px;
@@ -17,7 +21,7 @@
     flex-direction: column;
     order: 1;
     align-items: stretch;
-    background-color: $brown;
+    background-color: $green;
     max-height: 0;
   }
 }
@@ -34,7 +38,7 @@
   }
   &:first-child {
     @include tablets {
-      border-top: 1px solid $beige;
+      border-top: 1px solid #fff;
     }
   }
 }

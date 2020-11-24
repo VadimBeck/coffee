@@ -44,34 +44,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price 1257 руб.
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row.dashed
-                  .choise
-                    .choise__row
-                      span.choise__text Основа:
-                      select.choise__select(name='choise')
-                        option(value='1') Колумбия Supreme
-                        option(value='2') Арабика Premium
-                    .choise__row
-                      fieldset.choise__field
-                        label.choise__label
-                          | 100гр.
-                          input.choise__input(type='radio' name='radio-1' checked='')
-                        label.choise__label
-                          | 200гр.
-                          input.choise__input(type='radio' name='radio-1')
-                        label.choise__label
-                          | 500гр.
-                          input.choise__input(type='radio' name='radio-1')
-                        label.choise__label
-                          | 1000гр.
-                          input.choise__input(type='radio' name='radio-1')
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+                
+                +product-count(1270, null, null)
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -86,29 +61,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price 1257 руб.
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row.dashed
-                  .choise
-                    .choise__row
-                      fieldset.choise__field
-                        label.choise__label
-                          | 100гр.
-                          input.choise__input(type='radio' name='radio-2' checked='')
-                        label.choise__label
-                          | 200гр.
-                          input.choise__input(type='radio' name='radio-2')
-                        label.choise__label
-                          | 500гр.
-                          input.choise__input(type='radio' name='radio-2')
-                        label.choise__label
-                          | 1000гр.
-                          input.choise__input(type='radio' name='radio-2')
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(1250, true, ['Колумбия Supreme','Арабика Premium'])
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -123,13 +78,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price 1257 руб.
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(1257, true, null)
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -144,34 +95,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price По запросу
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row.dashed
-                  .choise
-                    .choise__row
-                      span.choise__text Основа:
-                      select.choise__select(name='choise')
-                        option(value='1') Колумбия Supreme
-                        option(value='2') Арабика Premium
-                    .choise__row
-                      fieldset.choise__field
-                        label.choise__label
-                          | 100гр.
-                          input.choise__input(type='radio' name='radio-3' checked='')
-                        label.choise__label
-                          | 200гр.
-                          input.choise__input(type='radio' name='radio-3')
-                        label.choise__label
-                          | 500гр.
-                          input.choise__input(type='radio' name='radio-3')
-                        label.choise__label
-                          | 1000гр.
-                          input.choise__input(type='radio' name='radio-3')
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(250, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -186,29 +112,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price По запросу
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row.dashed
-                  .choise
-                    .choise__row
-                      fieldset.choise__field
-                        label.choise__label
-                          | 100гр.
-                          input.choise__input(type='radio' name='radio-4' checked='')
-                        label.choise__label
-                          | 200гр.
-                          input.choise__input(type='radio' name='radio-4')
-                        label.choise__label
-                          | 500гр.
-                          input.choise__input(type='radio' name='radio-4')
-                        label.choise__label
-                          | 1000гр.
-                          input.choise__input(type='radio' name='radio-4')
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(420, true, ['Колумбия Supreme','Арабика Premium'])
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -223,13 +129,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price По запросу
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(420, true, ['Колумбия Supreme','Арабика Premium'])
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -244,29 +146,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price 1257 руб.
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row.dashed
-                  .choise
-                    .choise__row
-                      fieldset.choise__field
-                        label.choise__label
-                          | 100гр.
-                          input.choise__input(type='radio' name='radio-5' checked='')
-                        label.choise__label
-                          | 200гр.
-                          input.choise__input(type='radio' name='radio-5')
-                        label.choise__label
-                          | 500гр.
-                          input.choise__input(type='radio' name='radio-5')
-                        label.choise__label
-                          | 1000гр.
-                          input.choise__input(type='radio' name='radio-5')
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(420, true, ['Колумбия Supreme','Арабика Premium'])
+
             li.page-content__item
               .page-content__img
                 a(href='./product.html')
@@ -281,34 +163,9 @@ block maincontent
                   | робуста.
                   | Крепкий напиток с мягким вкусом.
               .catalog__count
-                .catalog__count-row
-                  .catalog__price 1257 руб.
-                  button.catalog__control.catalog__minus -
-                  input.catalog__count-num(value='1')
-                  button.catalog__control.catalog__plus +
-                .catalog__count-row.dashed
-                  .choise
-                    .choise__row
-                      span.choise__text Основа:
-                      select.choise__select(name='choise')
-                        option(value='1') Колумбия Supreme
-                        option(value='2') Арабика Premium
-                    .choise__row
-                      fieldset.choise__field
-                        label.choise__label
-                          | 100гр.
-                          input.choise__input(type='radio' name='radio-6' checked='')
-                        label.choise__label
-                          | 200гр.
-                          input.choise__input(type='radio' name='radio-6')
-                        label.choise__label
-                          | 500гр.
-                          input.choise__input(type='radio' name='radio-6')
-                        label.choise__label
-                          | 1000гр.
-                          input.choise__input(type='radio' name='radio-6')
-                .catalog__count-row
-                  button.catalog__count-btn В корзину
+
+                +product-count(420, true, ['Колумбия Supreme','Арабика Premium'])
+
           .pagination
             .pagination__controls
               span.pagination__listing.pagination__listing--active
@@ -327,64 +184,53 @@ block maincontent
               span.pagination__listing
                 a.pagination__next(href='#') Вперед
 
-        include ../blocks/sidebar
+        aside.sidebar
+
+          include ../blocks/navigation
+
+          .sidebar__block
+            h3.sidebar__subtitle Новости
+
+            include ../blocks/article
 
       .recommend
         .recommend__top Персональные рекомендации:
         ul.recommend__list
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='./img/catalog/catalog_7.png' alt='')
+            a.recommend__group(href='#') Лучезарный Будда
+            .recomend__count
+
+              +product-count(154, true, null)
+
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='./img/catalog/catalog_7.png' alt='')
+            a.recommend__group(href='#') Ассам 17
+            .recomend__count
+
+              +product-count(250, true, null)
+
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='../img/catalog/catalog_5.png' alt='')
+            a.recommend__group(href='#') Забаглионе
+            .recomend__count
+
+              +product-count(250, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
+
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
-          li.recommend__item
-            .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='./img/catalog/catalog_6.png' alt='')
+            a.recommend__group(href='#') Черная лилия
+            .recomend__count
+            
+                +product-count(250, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
   .modal
     .modal__inner
       button.modal__close
       h3.modal__title Товар успешно добавлен в корзину
 
 include ../mixins/menu
+include ../mixins/product-count

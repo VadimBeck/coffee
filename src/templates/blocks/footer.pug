@@ -17,39 +17,13 @@ footer.footer
           a.footer__nav-link(href='./spetspredlozheniya.html') Спецпредложения
     .footer__content
       ul.goods.footer__goods
-        li.goods__item
-          a.goods__link(href='') Кофе
-        li.goods__item
-          a.goods__link(href='') Чай
-        li.goods__item
-          a.goods__link(href='') Посуда
-        li.goods__item
-          a.goods__link(href='') Сладости
-        li.goods__item
-          a.goods__link(href='') Сахар
-        li.goods__item
-          a.goods__link(href='') Кофемашины
-        li.goods__item
-          a.goods__link(href='') Кофе в шоколаде
-        li.goods__item
-          a.goods__link(href='') Прочее
+        -var goods = ["Кофе","Чай","Посуда","Сладости","Сахар","Кофемашины","Кофе в шоколаде","Прочее"]
+          each goodItem in goods
+            li.goods__item
+              a.goods__link(href='#') #{goodItem}      
       .company-contacts
-        .socials
-          ul.socials__list
-            li.socials__item
-              a.socials__link(href='#')
-                img.socials__img(src='./img/socials/fb.png' alt='facebook')
-            li.socials__item
-              a.socials__link(href='#')
-                img.socials__img(src='./img/socials/vk.png' alt='vk')
-            li.socials__item
-              a.socials__link(href='#')
-                img.socials__img(src='./img/socials/ok.png' alt='ok')
-            li.socials__item
-              a.socials__link(href='#')
-                img.socials__img(src='./img/socials/yt.png' alt='youtube')
-            li.socials__item
-              a.socials__link(href='#')
-                img.socials__img(src='./img/socials/instagrem.png' alt='instagram')
+
+        include ../blocks/socials
+        
         .company-contacts__copyright © 2017 Магазин кофе и чая
         a.company-contacts__mail(href='mailto:#') marketing@tzarpo.ru

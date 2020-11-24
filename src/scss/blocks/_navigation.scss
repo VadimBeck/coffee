@@ -6,7 +6,7 @@
   margin-bottom: rem(30px);
 }
 .navigation__item {
-  border-bottom: 1px dashed $midBrown;
+  border-bottom: 1px dashed $green;
   padding-left: 40px;  
 }
 .navigation__link {
@@ -32,11 +32,11 @@
   margin-left: 2px;
   top: -2px;
   border: 6px solid transparent;
-  border-top-color: $brown;
+  border-top-color: $dark;
   border-width: 6px 5px 0px;
 }
 .navigation__inner {
-  color: $midBrown;
+  color: $dark;
   font-style: italic;
   padding-bottom: 15px;
 }

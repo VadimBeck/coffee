@@ -35,6 +35,13 @@ block maincontent
                   br
                   |                     Специально для настоящих и будущих поклонников "Царского подворья" мы запустили интернет-магазин. В нем представлены все 278 видов кофе, которые мы производим. Так же в нем можно найти наш чай, мармелад, драже и кофейную посуду.
         
-        include ../blocks/sidebar
+        aside.sidebar
+
+          include ../blocks/navigation
+
+          .sidebar__block
+            h3.sidebar__subtitle Новости
+
+            include ../blocks/article
 
 include ../mixins/menu

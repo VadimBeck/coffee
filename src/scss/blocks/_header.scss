@@ -53,7 +53,7 @@
     align-self: center;
   }  
   &:first-child{
-    flex: 0.9;
+    flex: 0.7;
     @include laptop {
       flex: 0 1 auto;
     }  
@@ -61,6 +61,6 @@
 }
 .header__icon {
   font-size: 33px;
-  color: $red;
+  color: $dark;
   margin-right: 10px;
 }

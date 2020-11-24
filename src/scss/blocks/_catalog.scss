@@ -10,9 +10,11 @@
     display: inline-block;
   }
   
-  &:hover, &.is-active {
+  &:hover, &:focus, &.is-active {
     background-color: #fff;
-    color: #000;
+    color: $dark;
+    border-color: transparent;
+    outline: none;
   }
 }
 .catalog__link-wrap {
@@ -34,69 +36,12 @@
     }
   }
 }
-.catalog__price {
-  text-align: center;
-  font-size: rem(20px);
-  color: $red;
-  align-self: center;
-  padding: 5px;
-  margin-right: auto;
-  font-weight: $mediumFont;
-}
 .catalog__count{
   margin: auto 0;
   text-align: center;
   min-width: 220px;
   padding: 3px 3px 3px 10px;
-  &--product {
-    min-width: 0;
-  }
   @include tablets {
     width: auto;
   }
-}
-.catalog__count-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.catalog__count-num {
-  width: 30px;
-  padding: 5px 0;
-  font-size: rem(20px);
-  border: 1px solid $brown;
-  border-radius: 5px;
-  text-align: center;
-  margin: 0 3px;
-}
-.catalog__control {
-  font-size: rem(22px);
-  font-weight: $mediumFont;
-  outline: none;
-}
-.catalog__control-link {
-  margin-left: 5px;
-  display: inline-block;
-}
-.catalog__count-btn {
-  margin-top: 10px;
-  background: $brown;
-  padding: 10px 0;
-  min-width: 125px;
-  font-size: rem(18px);
-  color: #fff;
-  margin-left: auto;
-  @include phones {
-    margin-left: 0;
-  }  
-}
-.catalog__count-btn--small {
-  font-size: rem(16px);
-}
-.dashed{
-  border-top: 1px dashed $brown;
-  border-bottom: 1px dashed $brown;
-  background-color: $lightBeige;
-  padding: 10px 0;
-  margin-top: 2px;
 }

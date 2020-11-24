@@ -42,10 +42,8 @@ const modal = (function(){
 }());
 
 document.body.addEventListener("click", (e)=> {
-  if(e.target.classList.contains("catalog__count-btn")){
+  if(e.target.classList.contains("product-count__btn")){
     e.preventDefault();
     modal.open();
   }
 })
-
-

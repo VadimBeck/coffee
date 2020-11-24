@@ -119,6 +119,13 @@ block maincontent
               span.pagination__listing
                 a.pagination__next(href='#') Вперед
         
-        include ../blocks/sidebar
+        aside.sidebar
+
+          include ../blocks/navigation
+
+          .sidebar__block
+            h3.sidebar__subtitle Новости
+
+            include ../blocks/article
 
 include ../mixins/menu

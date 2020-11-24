@@ -71,15 +71,14 @@ $(function () {
       })
     };
 
-    $(".catalog__plus").click(function(){
-      let input = $(this).siblings(".catalog__count-num");
+    $(".product-count__plus").click(function(){
+      let input = $(this).siblings(".product-count__num");
       input.val(+input.val()+1);
     })
-    $(".catalog__minus").click(function(){
-      let input = $(this).siblings(".catalog__count-num");
+    $(".product-count__minus").click(function(){
+      let input = $(this).siblings(".product-count__num");
       if(input.val()>1){
         input.val(input.val()-1);
       }
-    })
-    
+    })    
 });

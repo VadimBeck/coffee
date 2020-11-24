@@ -1,0 +1,32 @@
+mixin product-count(price, weight, base)
+  .product-count
+    .product-count__row
+      .product-count__price #{price}руб.
+      button.product-count__control.product-count__minus -
+      input.product-count__num(value='1')
+      button.product-count__control.product-count__plus +
+    if weight
+      .product-count__row.dashed
+        .choise
+          if base
+            .choise__row
+              span.choise__text Основа:
+              select.choise__select(name='choise')
+                each value,index in base
+                  option(value=`${index+1}`) #{value}                  
+          .choise__row
+            fieldset.choise__field
+              label.choise__label
+                | 100гр.
+                input.choise__input(type='radio' name='radio-1' checked='')
+              label.choise__label
+                | 200гр.
+                input.choise__input(type='radio' name='radio-1')
+              label.choise__label
+                | 500гр.
+                input.choise__input(type='radio' name='radio-1')
+              label.choise__label
+                | 1000гр.
+                input.choise__input(type='radio' name='radio-1')
+    .product-count__row
+      button.product-count__btn В корзину

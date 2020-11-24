@@ -1,6 +1,6 @@
 .scrolled {
   position: fixed;
-  background-color: $brown;
+  background-color: $green;
   opacity: 0;
   width: 100%;
   color: #fff;
@@ -21,7 +21,7 @@
 }
 .scrolled__goods {
   width: 70%;  
-  border-right: 1px dashed $lightBrown;  
+  border-right: 1px dashed $lightGrey;  
   transition: all .6s;
 
   @include laptop {
@@ -46,7 +46,7 @@
   }
   & .goods__item:first-child {
     @include tablets {
-      border-top: 1px solid $lightBrown;
+      border-top: 1px solid #fff;
     }
   }    
 }
@@ -75,7 +75,7 @@
   bottom: -55px;
   background: #fff;
   right: 0;
-  border: 2px solid $brown;
+  border: 2px solid $dark;
   width: 200%;
   display: none;
   & .search__inner {
@@ -121,6 +121,6 @@
 
 .scrolled__link {
   font-size: 25px;
-  color: $lightBrown;
+  color: $lightGrey;
   padding: 5px;
 }

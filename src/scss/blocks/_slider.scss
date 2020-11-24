@@ -4,6 +4,17 @@
     display: none;
   }
 }
+.slider__static-link{
+  display: block;
+  @include desktop {
+    margin-top: 30px;
+  }
+}
+.slider__static-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .slider__desc {
   text-transform: uppercase;
   position: absolute;

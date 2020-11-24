@@ -34,72 +34,55 @@ block maincontent
                 | В основе этого купажа классические сорта арабики из Гватемалы и Эфиопии. Насыщенность вкусу придает
                 | робуста.
                 | Крепкий напиток с мягким вкусом.
-            .catalog__count.catalog__count--product
-              .catalog__count-row
-                .catalog__price 1257 руб.
-                button.catalog__control.catalog__minus -
-                input.catalog__count-num(value='1')
-                button.catalog__control.catalog__plus +
-              button.catalog__count-btn Купить
-              button.catalog__count-btn.catalog__count-btn--small Купить в 1 клик
+            .catalog__count
+              +product-count(250, true, null)
           .page-content__info
             a.page-content__info-link(href='#') Рецепты кофе
             a.page-content__info-link(href='#')  Отзывы (0)
 
-        include ../blocks/sidebar
+        aside.sidebar
+
+          include ../blocks/navigation
+
+          .sidebar__block
+            h3.sidebar__subtitle Новости
+
+            include ../blocks/article
         
       .recommend
         .recommend__top Персональные рекомендации:
         ul.recommend__list
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='./img/catalog/catalog_7.png' alt='')
+            a.recommend__group(href='#') Лучезарный Будда
+            .recomend__count
+
+              +product-count(154, true, null)
+
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='./img/catalog/catalog_7.png' alt='')
+            a.recommend__group(href='#') Ассам 17
+            .recomend__count
+
+              +product-count(250, true, null)
+
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='../img/catalog/catalog_5.png' alt='')
+            a.recommend__group(href='#') Забаглионе
+            .recomend__count
+
+              +product-count(250, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
+
           li.recommend__item
             .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
-          li.recommend__item
-            .recommend__img
-              img.recommend__img-pic(src='./img/catalog/recomend.jpg' alt='')
-            a.recommend__group(href='#') Ирландский крем
-            a.recommend__name(href='#') Марагоджил
-            span.recommend__price 500 руб.
-            a.recommend__btn(href='#') Купить
-            .recommend__type
-              | Вид кофе 
-              span.recomend__type-inner Купажи
+              img.recommend__img-pic(src='./img/catalog/catalog_6.png' alt='')
+            a.recommend__group(href='#') Черная лилия
+            .recomend__count
+            
+                +product-count(250, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
 
 include ../mixins/menu
+include ../mixins/product-count

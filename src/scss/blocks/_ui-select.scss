@@ -9,7 +9,7 @@
 }
 .ui-selectmenu-text {
     font-weight: 700;
-    color: $brown;
+    color: $dark;
 }
 .ui-widget{
     font-size: 12px;
@@ -20,29 +20,29 @@
     margin-left: 10px;
     margin-bottom: 10px;
     outline: none;
-    color: $darkBrown;
+    color: $dark;
     border-color: #a18e87;
 }
 .ui-menu {
     margin: 0!important;
     & .ui-menu-item-wrapper{
         padding: 3px;
-        color: $darkBrown;
+        color: $dark;
         border-color: #a18e87;
     }
     & .ui-menu-item-wrapper.ui-state-active{
         padding: 3px;
         background: #fff;
-        color: $darkBrown;
+        color: $dark;
         border-color: transparent;
-        border-bottom: 1px dashed #a18e87;
-        border-bottom-color: #a18e87;
+        border-bottom: 1px dashed $dark;
+        border-bottom-color: $dark;
     }
 }
 .ui-selectmenu-button.ui-button.ui-widget{
     &:hover{
         background: #fff;
-        color: $darkBrown;
+        color: $dark;
         border-color: #a18e87;
     }
 }

@@ -10,45 +10,59 @@ block header
 block maincontent
   .maincontent
     .slider
-      .owl-carousel
-        div
-          img(src='./img/slider/slide_1.jpg' alt='')
-        div
-          img(src='./img/slider/slide_2.jpg' alt='')
-        div
-          img(src='./img/slider/slide_3.jpg' alt='')
-      .slider__desc
-        h1.slider__desc-title Продукция произведена компанией ООО "Царское Подворье"
+      .slider__static
+        a.slider__static-link(href="./catalog.html")
+          img.slider__static-img(src="./img/main/static.jpg", alt="")
     .container
       main.content.content--main-page
         .content__lines
         section.content__block
           .section-title
             h2.section-title__text Хиты продаж
-          p Неверный информационный блок
+          ul.recommend__list
+            li.recommend__item
+              .recommend__img
+                img.recommend__img-pic(src='./img/catalog/catalog_12.png' alt='')
+              a.recommend__group(href='#') Барбадос (Bonka)
+              .recomend__count
+
+                +product-count(154, true, null)
+
+            li.recommend__item
+              .recommend__img
+                img.recommend__img-pic(src='./img/catalog/catalog_5.png' alt='')
+              a.recommend__group(href='#') Забаглионе
+              .recomend__count
+
+                +product-count(250, true, null)
+
+            li.recommend__item
+              .recommend__img
+                img.recommend__img-pic(src='../img/catalog/catalog_8.png' alt='')
+              a.recommend__group(href='#') Императрица
+              .recomend__count
+
+                +product-count(311, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
+
+            li.recommend__item
+              .recommend__img
+                img.recommend__img-pic(src='./img/catalog/catalog_9.png' alt='')
+              a.recommend__group(href='#') Кения АА
+              .recomend__count
+              
+                  +product-count(250, true, ['Колумбия супремо', 'Марагоджил', 'Декаф'])
+            
         section.content__block
           .section-title
             h2.section-title__text Новости
           .content__block-row
-            .content__block-elem.article
-              img.article__img(src='./img/news/news_01.png' alt='Открытие нового сайта')
-              h4
-                a(href='#') Начал работать фирменный интернет-магазин "Царского Подворья"!
-              time(datetime='2018-07-01') 01.07.2018
-              p
-                | В компанию "Царское Подворье" часто поступают звонки и письма с вопросом "где можно купить ваш кофе?"
-                br
-                |                   Нас радует подобное внимание, ведь это доказательство качества наших продуктов.
-                br
-                |                   Не смотря на широкую сеть дистрибьюторов по всей России, не все позиции нашего широкого ассортимента
-                |                   легко купить.
-                br
-                |                   Специально для настоящих и будущих поклонников "Царского подворья" мы запустили интернет-магазин. В нем
-                |                   представлены все 278 видов кофе, которые мы производим. Так же в нем можно найти наш чай, мармелад,
-                |                   драже и кофейную посуду.
+            .content__block-elem
+
+              include ../blocks/article
+              
         section.content__block
           .section-title
-            h2.section-title__text Отзывы
+            h2.section-title__text О нас
           .content__block-row.content__block-media
             .content__block-video
               iframe(width='560' height='315' src='https://www.youtube.com/embed/YLVJ9KwKJqA' allowfullscreen='')
@@ -62,3 +76,4 @@ block maincontent
                 | знать, как правильно выбрать зерна и как отличить хороший кофе от некачественного.
 
 include ../mixins/menu
+include ../mixins/product-count

@@ -4,20 +4,20 @@
   font-weight: 500;
   &:hover, &:active {
     color: #fff;
-    background-color: $brown;
-    border-color: $brown;
+    background-color: $green;
+    border-color: $green;
     }
   &.ui-checkboxradio-checked{
-    background-color: $brown;
+    background-color: $green;
     color: #fff;
   }
 }
 .ui-checkboxradio-checked.ui-state-active {
-  border-color: $brown;
+  border-color: $green;
   &:hover, &:active {
     color: #fff;
-    background-color: $brown;
-    border-color: $brown;
+    background-color: $green;
+    border-color: $green;
   }
 }
 .ui-visual-focus {
