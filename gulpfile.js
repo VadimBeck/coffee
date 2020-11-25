@@ -21,9 +21,9 @@ gulp.task('styles', function() {
 	.pipe(sourcemaps.init())
 		.pipe(sass().on("error", sass.logError))		
 		.pipe(autoprefixer(['last 2 versions']))
-		//.pipe(cleanCSS({
-        // level: 2
-      //}))
+		.pipe(cleanCSS({
+        level: 2
+      }))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/css'))
 	.pipe(browserSync.reload( {stream: true} ))
@@ -33,7 +33,7 @@ gulp.task('scripts', function() {
    return gulp.src('./src/js/modules/*.js')
    .pipe(sourcemaps.init())
      .pipe(concat('script.min.js'))
-     //.pipe(uglify())
+     .pipe(uglify())
      .pipe(sourcemaps.write())
    .pipe(gulp.dest('./dist/scripts'))
    .pipe(browserSync.stream());
